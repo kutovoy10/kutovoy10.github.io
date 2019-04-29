@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'MariadPro Regular';
+    src: url("../fonts/MyriadPro-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'MariadPro Light';
+    src: url("../fonts/MyriadPro-Light.ttf");
+    font-weight: 300;
+}
