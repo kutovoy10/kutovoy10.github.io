@@ -1,0 +1,51 @@
+/* Raleway */
+
+@font-face{
+    font-family: 'Raleway';
+    src: url('ralewaylight.ttf');
+    font-weight: 200;
+}
+
+@font-face{
+    font-family: 'Raleway';
+    src: url('ralewayregular.ttf');
+    font-weight: 300;
+}
+
+@font-face{
+    font-family: 'Raleway';
+    src: url('ralewayregular.ttf');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Raleway';
+    src: url('ralewaybold.ttf');
+    font-weight: 700;
+}
+
+/* Montserrat */
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url('montserratultralight.ttf');
+    font-weight: 200;
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url('montserratlight.ttf');
+    font-weight: 300;
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url('montserrat.ttf');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url('montserratbold.ttf');
+    font-weight: 700;
+}
