@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'MS-100';
+  src: url("../fonts/MuseoSlab-100.ttf");
+  font-weight: 100; }
+
+@font-face {
+  font-family: 'MS-300';
+  src: url("../fonts/MuseoSlab-300.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'MS-500';
+  src: url("../fonts/MuseoSlab-500.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'MS-700';
+  src: url("../fonts/MuseoSlab-700.ttf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'MS-900';
+  src: url("../fonts/MuseoSlab-900.ttf");
+  font-weight: 900; }
+
+@font-face {
+  font-family: 'MS-1000';
+  src: url("../fonts/MuseoSlab-1000.ttf");
+  font-weight: 1000; }
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'MS-500'; }
+
+header {
+  background-image: url("../../img/bg.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 1000px;
+  position: relative; }
+  header .header_nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #ccc;
+    z-index: 999; }
+    header .header_nav .wrapper {
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0; }
+      header .header_nav .wrapper .logo {
+        font-family: 'MS-500';
+        color: #ffffff; }
+      header .header_nav .wrapper .nav nav ul {
+        list-style-type: none;
+        display: flex; }
+      header .header_nav .wrapper .nav nav li {
+        margin: 0 20px; }
+        header .header_nav .wrapper .nav nav li:last-of-type {
+          margin-right: 0; }
+        header .header_nav .wrapper .nav nav li a {
+          text-decoration: none;
+          color: #ffffff; }
+  header .header_title {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; }
+    header .header_title h1 {
+      text-transform: uppercase;
+      font-family: "MS-900";
+      font-size: 72px;
+      -webkit-text-stroke: 3px #000;
+      letter-spacing: 0.075em; }
+    header .header_title .line {
+      width: 175px;
+      height: 1px;
+      background: #ffffff;
+      margin: 20px auto 30px auto; }
+    header .header_title p {
+      font-size: 18px;
+      letter-spacing: 0.075em; }
+
+/*# sourceMappingURL=main.css.map */
