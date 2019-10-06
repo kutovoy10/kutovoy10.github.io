@@ -25,8 +25,14 @@ header
 			align-items: center
 			padding: 20px 0
 			.logo
-				font-family: 'MS-500'
-				color: #ffffff
+				transition: .5s
+				a
+					font-family: 'MS-500'
+					color: #ffffff
+					text-decoration: none
+				&:hover
+					transform: scale(1.1)
+					transition: .5s
 			.nav
 				nav
 					ul
@@ -36,9 +42,33 @@ header
 						margin: 0 20px
 						&:last-of-type
 							margin-right: 0
-						a
-							text-decoration: none
-							color: #ffffff
+						// a
+						// 	text-decoration: none
+						// 	color: #ffffff
+						// a
+						// 	display: inline-block
+						// 	color:#ffeb3b
+						// 	line-height: 1
+						// 	text-decoration:none
+						// 	cursor: pointer
+						// 	position:relative
+						// 	&::after
+						// 			background-color: #ffeb3b
+						// 			display: block
+						// 			content: ""
+						// 			height: 2px
+						// 			width: 0%
+						// 			left: 50%
+						// 			position:absolut
+						// 			-webkit-transition: width .3s ease-in-out
+						// 			-moz--transition: width .3s ease-in-out
+						// 			transition: width .3s ease-in-out
+						// 			-webkit-transform:translateX(-50%)
+						// 			-moz-transform:translateX(-50%)
+						// 			transform:translateX(-50%)
+						// 	&:hover:after,
+						// 	&:focus:after
+						// 				width: 100%
 	.header_title
 		width: 100%
 		color: #fff
@@ -61,3 +91,17 @@ header
 		p
 			font-size: 18px
 			letter-spacing: 0.075em
+	.arrow-down
+		a
+			i
+				color: #ffffff
+				font-size: 40px
+				position: absolute
+				bottom: 10%
+				left: 50%
+				transform: translateX(-50%)
+				opacity: .5
+				transition: .5s
+				&:hover
+					opacity: 1
+					transition: .5s

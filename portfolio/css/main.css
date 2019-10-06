@@ -55,8 +55,14 @@ header {
       align-items: center;
       padding: 20px 0; }
       header .header_nav .wrapper .logo {
-        font-family: 'MS-500';
-        color: #ffffff; }
+        transition: .5s; }
+        header .header_nav .wrapper .logo a {
+          font-family: 'MS-500';
+          color: #ffffff;
+          text-decoration: none; }
+        header .header_nav .wrapper .logo:hover {
+          transform: scale(1.1);
+          transition: .5s; }
       header .header_nav .wrapper .nav nav ul {
         list-style-type: none;
         display: flex; }
@@ -64,9 +70,6 @@ header {
         margin: 0 20px; }
         header .header_nav .wrapper .nav nav li:last-of-type {
           margin-right: 0; }
-        header .header_nav .wrapper .nav nav li a {
-          text-decoration: none;
-          color: #ffffff; }
   header .header_title {
     width: 100%;
     color: #fff;
@@ -89,5 +92,17 @@ header {
     header .header_title p {
       font-size: 18px;
       letter-spacing: 0.075em; }
+  header .arrow-down a i {
+    color: #ffffff;
+    font-size: 40px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .5;
+    transition: .5s; }
+    header .arrow-down a i:hover {
+      opacity: 1;
+      transition: .5s; }
 
 /*# sourceMappingURL=main.css.map */
