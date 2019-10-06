@@ -8,7 +8,6 @@ header
 	background-position: 50% 50%
 	background-size: cover
 	height: 100vh
-	margin-bottom: 1000px
 	position: relative
 	.header_nav
 		position: fixed
@@ -42,33 +41,28 @@ header
 						margin: 0 20px
 						&:last-of-type
 							margin-right: 0
-						// a
-						// 	text-decoration: none
-						// 	color: #ffffff
-						// a
-						// 	display: inline-block
-						// 	color:#ffeb3b
-						// 	line-height: 1
-						// 	text-decoration:none
-						// 	cursor: pointer
-						// 	position:relative
-						// 	&::after
-						// 			background-color: #ffeb3b
-						// 			display: block
-						// 			content: ""
-						// 			height: 2px
-						// 			width: 0%
-						// 			left: 50%
-						// 			position:absolut
-						// 			-webkit-transition: width .3s ease-in-out
-						// 			-moz--transition: width .3s ease-in-out
-						// 			transition: width .3s ease-in-out
-						// 			-webkit-transform:translateX(-50%)
-						// 			-moz-transform:translateX(-50%)
-						// 			transform:translateX(-50%)
-						// 	&:hover:after,
-						// 	&:focus:after
-						// 				width: 100%
+						a // анимация подчеркивания с центра
+							position: relative
+							color:#fff
+							text-decoration: none
+							cursor: pointer
+							&::after
+								position: absolute
+								display: block
+								content: ""
+								background-color: #fff
+								height: 2px
+								width: 0%
+								left: 50%
+								-webkit-transition: width .3s ease-in-out
+								-moz--transition: width .3s ease-in-out
+								transition: width .3s ease-in-out
+								-webkit-transform: translateX(-50%)
+								-moz-transform: translateX(-50%)
+								transform: translateX(-50%)
+							&:hover::after,
+							&:focus::after
+										width: 100%
 	.header_title
 		width: 100%
 		color: #fff
@@ -105,3 +99,7 @@ header
 				&:hover
 					opacity: 1
 					transition: .5s
+
+main
+	section.about
+		padding: 200px 0px
