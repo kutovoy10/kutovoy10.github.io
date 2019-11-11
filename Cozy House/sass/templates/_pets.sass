@@ -1,0 +1,175 @@
+.pets
+	background-color: $bgBlocks
+	padding: 70px 0 70px 0
+	.title
+		color: $grey
+		font-family: $Georgia
+		font-size: 35px
+		line-height: 45px
+		letter-spacing: 2.1px
+		text-align: center
+		margin-bottom: -50px
+	.button-get-to-know
+		display: flex
+		justify-content: center
+		margin-top: -70px
+		a
+			text-decoration: none
+			color: #292929
+			font-family: $Georgia
+			font-size: 17px
+			letter-spacing: 1.02px
+			background: $beige
+			border-radius: 26px
+			border: 2px solid $beige
+			padding: 15px 48px
+			text-align: center
+			transition: .4s
+			&:hover
+				transition: .4s
+				background-color: #fddcc4
+	.pets-slider
+		width: 960px
+		margin: 100px auto
+		height: auto
+		.block
+			background: $white
+			width: 270px
+			margin-right: 25px
+			margin-left: 25px
+			text-align: center
+			border-radius: 9px
+			border: 1px solid #bdbdbd
+			outline: none
+			transition: .4s
+			&:hover
+				transition: .4s
+				cursor: pointer
+				box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.75)
+			.block-img
+				height: 270px
+				position: relative
+				img
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+			.name
+				color: $grey
+				font-family: $Georgia
+				font-size: 20px
+				letter-spacing: 1.2px
+				margin-top: 20px
+				margin-bottom: 40px
+			.button
+				display: inline-block
+				margin-bottom: 55px
+				text-decoration: none
+				color: #292929
+				font-family: $Georgia
+				font-size: 17px
+				letter-spacing: 1.02px
+				background: $bgModel
+				border-radius: 26px
+				border: 2px solid $beige
+				padding: 15px 45px
+				transition: .3s
+				&:hover
+					transition: .3s
+					background-color: $beige
+
+.left, .right
+	width: 50px
+	height: 50px
+	border: 2px solid $beige
+	background: transparent
+	border-radius: 50px
+	display: flex
+	justify-content: center
+	align-items: center
+	cursor: pointer
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	&:hover
+		background-color: $beige
+		transition: .4s
+
+.left
+	left: -100px
+
+.right
+	right: -100px
+
+.slick-track
+	margin: 25px 0
+
+.overflow
+	display: none
+	position: fixed
+	top: 0
+	left:	0
+	width: 100vw
+	height: 100vh
+	background: rgba(255, 255, 255, 0.4)
+	.katrine-cat-modal
+		position: fixed
+		z-index: 1
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		background-color: $bgModel
+		width: 970px
+		margin: 0 auto
+		padding: 0 50px
+		border-radius: 9px
+		box-shadow: 0 2px 30px 5px rgba(13, 13, 13, 0.486)
+		.modal-window
+			display: flex
+			align-items: center
+			position: relative
+			.modal-close
+				display: flex
+				align-items: center
+				justify-content: center
+				position: absolute
+				width: 50px
+				height: 50px
+				border: 2px solid $beige
+				border-radius: 50px
+				top: -57px
+				right: -107px
+				&:hover
+					background-color: $beige
+					transition: .3s
+					cursor: pointer
+			.modal-left
+				margin-right: 100px
+			.modal-right
+				.name
+					color: $grey
+					font-family: $Georgia
+					font-size: 35px
+					letter-spacing: 2.1px
+					line-height: 45px
+				.kind
+					color: $grey
+					font-family: $Georgia
+					font-size: 20px
+					letter-spacing: 1.2px
+					line-height: 34px
+				.text
+					color: #4c4c4c
+					font-family: $Arial
+					line-height: 24px
+					font-size: 15px
+					margin: 15px 0
+				ul
+					margin-left: 15px
+					li
+						font-family: $Georgia
+						line-height: 34px
+						font-size: 15px
+						color: $beige
+						span
+							color: $grey
