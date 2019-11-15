@@ -1,0 +1,263 @@
+// ========== >= 1200px ==========
+@media screen and (max-width:1200px)
+
+	.wrapper
+		width: 100%
+
+	// header
+	header
+		.wrapper
+			.top
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+				.nav
+					margin-top: 25px
+			.bottom
+				margin-left: 75px
+
+	// main
+	main
+		// help
+		.help
+			.positions
+				width: 100%
+
+		// pets
+		.pets
+			.pets-slider
+				width: 80%
+				.block
+					.block-img
+						img
+							// width: 100%
+							// height: auto
+					.button
+						margin-bottom: 35px
+
+	// footer
+	footer
+		.wrapper
+			.info
+				margin-right: 75px
+				margin-left: 75px
+			.block
+				width: 35%
+
+	// modal
+	.overflow
+		.katrine-cat-modal
+			.modal-window
+				.modal-right
+
+	// slider
+	.slick-track
+		overflow: hidden
+
+		// slider buttons
+	.left
+		left: -50px
+
+	.right
+		right: -50px
+
+// ========== >= 992px ==========
+@media screen and (max-width:992px)
+
+	// header
+	header
+		padding: 50px 0 200px 0
+		.wrapper
+			.bottom
+				.title
+					font-size: 36px
+
+	// main
+	main
+		// about-the-shelter
+		.about-the-shelter
+			padding: 50px 0
+			.left-block
+				display: none
+			.right-block
+				width: 90%
+				.title
+					text-align: center
+				.text
+					text-align: justify
+
+		// donation
+		.donation
+			.left-block
+				display: none
+			.right-block
+				width: 90%
+				text-align: center
+				.number-card
+					margin: 20px auto
+
+		// pets-block
+		.pets
+			.pets-slider
+				width: 80%
+				.block
+					.button
+						padding: 15px
+
+	// footer
+	footer
+		.wrapper
+			display: flex
+			align-items: center
+			.block
+				width: 50%
+				.title
+					font-size: 30px
+				.e-mail, .number
+					span
+						font-size: 16px
+				.local-one, .local-two
+					span
+						font-size: 16px
+
+	// modal
+	.overflow
+		.katrine-cat-modal
+			.modal-window
+				flex-direction: column
+				justify-content: center
+				.modal-left
+					margin: 0 auto
+
+// ========== >= 768px ==========
+@media screen and (max-width:768px)
+
+	// main
+	main
+		.pets
+			.pets-slider
+				.block
+					.button
+						padding: 15px 30px
+
+	// modal
+	.overflow
+		.modal-close
+			display: none
+		.katrine-cat-modal
+			.modal-window
+				.modal-close-for-media
+					display: flex
+
+// ========== >= 650px (for slider) ==========
+@media screen and (max-width:650px)
+
+	main
+		// pets
+		.pets
+			.pets-slider
+				.block
+					.block-img
+						img
+							width: auto
+							height: auto
+
+// ========== <600px ==========
+@media screen and (max-width:600px)
+
+	// main
+	main
+		.help
+			.positions
+				.block-pos
+					width: 33%
+
+	// footer
+	footer
+		.wrapper
+			width: 100%
+			display: flex
+			justify-content: space-around
+			.block
+				width: 45%
+				.title
+					text-align: center
+			.info
+				margin: 0
+
+// ========== <550px ==========
+@media screen and (max-width:550px)
+
+	// header
+	header
+		padding-bottom: 100px
+		background-position: 0% 0%
+		.wrapper
+			.bottom
+				margin: 0
+				.title
+					width: 98%
+					text-align: center
+					margin-top: 40px
+				.text
+					width: 98%
+					text-align: center
+				.button
+					text-align: center
+
+	// main
+	main
+
+		// pets
+		.pets
+			.pets-slider
+				.block
+					margin: 10px 25px
+
+		// help
+		.help
+			.positions
+				.block-pos
+					width: 48%
+					text-align: center
+
+		//donation
+		.donation
+			.right-block
+				.title
+					margin-bottom: 40px
+				.number-card
+					width: 100%
+					.number
+						font-size: 18px
+
+	// footer
+	footer
+		.wrapper
+			display: flex
+			flex-direction: column
+			.info
+				margin-bottom: 20px
+			.block
+				width: 90%
+
+	// slaider
+	.left, .right
+		visibility: hidden
+
+	// modal
+	.overflow
+		.katrine-cat-modal
+			.modal-window
+				.modal-close-for-media
+					width: 40px
+					height: 40px
+					top: 1%
+				.modal-left
+					width: 95%
+					height: auto
+					img
+						display: block
+						width: 100%
+						height: auto

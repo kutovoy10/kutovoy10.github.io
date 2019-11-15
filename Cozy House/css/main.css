@@ -19,6 +19,11 @@
   width: 1170px;
   margin: 0 auto; }
 
+header,
+main,
+footer {
+  overflow: hidden; }
+
 header {
   background: url(../img/bg-for-header.png) center/cover no-repeat;
   padding-top: 50px;
@@ -158,7 +163,7 @@ main .donation {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #f6f6f6;
   padding-top: 70px;
   padding-bottom: 80px; }
   main .donation .left-block {
@@ -274,7 +279,7 @@ footer {
     margin: 100px auto;
     height: auto; }
     .pets .pets-slider .block {
-      background: #ffffff;
+      background: #fafafa;
       width: 270px;
       margin-right: 25px;
       margin-left: 25px;
@@ -288,13 +293,15 @@ footer {
         cursor: pointer;
         box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75); }
       .pets .pets-slider .block .block-img {
-        height: 270px;
-        position: relative; }
+        width: 100%;
+        height: 290px;
+        padding: 15px 15px 0 15px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; }
         .pets .pets-slider .block .block-img img {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%); }
+          display: block; }
       .pets .pets-slider .block .name {
         color: #545454;
         font-family: "Georgia";
@@ -353,24 +360,42 @@ footer {
   width: 100vw;
   height: 100vh;
   background: rgba(255, 255, 255, 0.4); }
+  .overflow .modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #f1cdb3;
+    border-radius: 50px;
+    top: 5%;
+    right: 2.5%; }
+    .overflow .modal-close:hover {
+      background-color: #f1cdb3;
+      transition: .3s;
+      cursor: pointer; }
   .overflow .katrine-cat-modal {
     position: fixed;
+    overflow-y: scroll;
     z-index: 1;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: #fafafa;
-    width: 970px;
+    width: 80%;
+    max-height: 80%;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0px 50px;
     border-radius: 9px;
     box-shadow: 0 2px 30px 5px rgba(13, 13, 13, 0.486); }
     .overflow .katrine-cat-modal .modal-window {
       display: flex;
       align-items: center;
-      position: relative; }
-      .overflow .katrine-cat-modal .modal-window .modal-close {
-        display: flex;
+      position: relative;
+      padding: 30px 0; }
+      .overflow .katrine-cat-modal .modal-window .modal-close-for-media {
+        display: none;
         align-items: center;
         justify-content: center;
         position: absolute;
@@ -378,9 +403,9 @@ footer {
         height: 50px;
         border: 2px solid #f1cdb3;
         border-radius: 50px;
-        top: -57px;
-        right: -107px; }
-        .overflow .katrine-cat-modal .modal-window .modal-close:hover {
+        top: 2%;
+        right: 0; }
+        .overflow .katrine-cat-modal .modal-window .modal-close-for-media:hover {
           background-color: #f1cdb3;
           transition: .3s;
           cursor: pointer; }
@@ -403,7 +428,8 @@ footer {
         font-family: "Arial";
         line-height: 24px;
         font-size: 15px;
-        margin: 15px 0; }
+        margin: 15px 0;
+        text-align: justify; }
       .overflow .katrine-cat-modal .modal-window .modal-right ul {
         margin-left: 15px; }
         .overflow .katrine-cat-modal .modal-window .modal-right ul li {
@@ -512,5 +538,152 @@ footer {
   .for-scroll-to-top:hover {
     transition: .4s;
     opacity: 1; }
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 100%; }
+  header .wrapper .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    header .wrapper .top .nav {
+      margin-top: 25px; }
+  header .wrapper .bottom {
+    margin-left: 75px; }
+  main .help .positions {
+    width: 100%; }
+  main .pets .pets-slider {
+    width: 80%; }
+    main .pets .pets-slider .block .button {
+      margin-bottom: 35px; }
+  footer .wrapper .info {
+    margin-right: 75px;
+    margin-left: 75px; }
+  footer .wrapper .block {
+    width: 35%; }
+  .slick-track {
+    overflow: hidden; }
+  .left {
+    left: -50px; }
+  .right {
+    right: -50px; } }
+
+@media screen and (max-width: 992px) {
+  header {
+    padding: 50px 0 200px 0; }
+    header .wrapper .bottom .title {
+      font-size: 36px; }
+  main .about-the-shelter {
+    padding: 50px 0; }
+    main .about-the-shelter .left-block {
+      display: none; }
+    main .about-the-shelter .right-block {
+      width: 90%; }
+      main .about-the-shelter .right-block .title {
+        text-align: center; }
+      main .about-the-shelter .right-block .text {
+        text-align: justify; }
+  main .donation .left-block {
+    display: none; }
+  main .donation .right-block {
+    width: 90%;
+    text-align: center; }
+    main .donation .right-block .number-card {
+      margin: 20px auto; }
+  main .pets .pets-slider {
+    width: 80%; }
+    main .pets .pets-slider .block .button {
+      padding: 15px; }
+  footer .wrapper {
+    display: flex;
+    align-items: center; }
+    footer .wrapper .block {
+      width: 50%; }
+      footer .wrapper .block .title {
+        font-size: 30px; }
+      footer .wrapper .block .e-mail span, footer .wrapper .block .number span {
+        font-size: 16px; }
+      footer .wrapper .block .local-one span, footer .wrapper .block .local-two span {
+        font-size: 16px; }
+  .overflow .katrine-cat-modal .modal-window {
+    flex-direction: column;
+    justify-content: center; }
+    .overflow .katrine-cat-modal .modal-window .modal-left {
+      margin: 0 auto; } }
+
+@media screen and (max-width: 768px) {
+  main .pets .pets-slider .block .button {
+    padding: 15px 30px; }
+  .overflow .modal-close {
+    display: none; }
+  .overflow .katrine-cat-modal .modal-window .modal-close-for-media {
+    display: flex; } }
+
+@media screen and (max-width: 650px) {
+  main .pets .pets-slider .block .block-img img {
+    width: auto;
+    height: auto; } }
+
+@media screen and (max-width: 600px) {
+  main .help .positions .block-pos {
+    width: 33%; }
+  footer .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+    footer .wrapper .block {
+      width: 45%; }
+      footer .wrapper .block .title {
+        text-align: center; }
+    footer .wrapper .info {
+      margin: 0; } }
+
+@media screen and (max-width: 550px) {
+  header {
+    padding-bottom: 100px;
+    background-position: 0% 0%; }
+    header .wrapper .bottom {
+      margin: 0; }
+      header .wrapper .bottom .title {
+        width: 98%;
+        text-align: center;
+        margin-top: 40px; }
+      header .wrapper .bottom .text {
+        width: 98%;
+        text-align: center; }
+      header .wrapper .bottom .button {
+        text-align: center; }
+  main .pets .pets-slider .block {
+    margin: 10px 25px; }
+  main .help .positions .block-pos {
+    width: 48%;
+    text-align: center; }
+  main .donation .right-block .title {
+    margin-bottom: 40px; }
+  main .donation .right-block .number-card {
+    width: 100%; }
+    main .donation .right-block .number-card .number {
+      font-size: 18px; }
+  footer .wrapper {
+    display: flex;
+    flex-direction: column; }
+    footer .wrapper .info {
+      margin-bottom: 20px; }
+    footer .wrapper .block {
+      width: 90%; }
+  .left, .right {
+    visibility: hidden; }
+  .overflow .katrine-cat-modal .modal-window .modal-close-for-media {
+    width: 40px;
+    height: 40px;
+    top: 1%; }
+  .overflow .katrine-cat-modal .modal-window .modal-left {
+    width: 95%;
+    height: auto; }
+    .overflow .katrine-cat-modal .modal-window .modal-left img {
+      display: block;
+      width: 100%;
+      height: auto; } }
 
 /*# sourceMappingURL=main.css.map */

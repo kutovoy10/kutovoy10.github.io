@@ -1,7 +1,10 @@
 // ========== ANIMATION ==========
 
 AOS.init({
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  disable: function() {
+    var maxWidth = 1200;
+    return window.innerWidth < maxWidth;
+  }, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
   startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
   initClassName: 'aos-init', // class applied after initialization
   animatedClassName: 'aos-animate', // class applied on animation
@@ -26,10 +29,43 @@ $('.multiple-items').slick({
   infinite: false,
   slidesToShow: 3,
   slidesToScroll: 1,
-  draggable: false,
+  draggable: true,
   edgeFriction: '0',
   nextArrow: '<div class="right"><img src="./img/long-right-arrow.png" alt="right"></div>',
-  prevArrow: '<div class="left"><img src="./img/long-left-arrow.png" alt="left"></div>'
+  prevArrow: '<div class="left"><img src="./img/long-left-arrow.png" alt="left"></div>',
+  responsive: [
+    {
+      breakpoint: 1200.1,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768.1,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 850,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 650.1,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 
 
@@ -39,6 +75,7 @@ $('.multiple-items').slick({
 let modal = document.querySelector('.modal-window-example');
 let btn = document.querySelectorAll('.btn-modal-open');
 let close = document.querySelectorAll('.modal-close');
+let closeForMedia = document.querySelectorAll('.modal-close-for-media');
 
 btn.forEach(function (element) {
   element.onclick = () => {
@@ -48,6 +85,13 @@ btn.forEach(function (element) {
 })
 
 close.forEach(function (element) {
+  element.onclick = () => {
+    modal.style.display = 'none';
+    document.body.style.overflow = ''; // allow to scroll
+  };
+})
+
+closeForMedia.forEach(function (element) {
   element.onclick = () => {
     modal.style.display = 'none';
     document.body.style.overflow = ''; // allow to scroll
