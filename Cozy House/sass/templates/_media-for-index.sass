@@ -194,6 +194,112 @@
 		padding-bottom: 100px
 		background-position: 0% 0%
 		.wrapper
+			// burger-menu
+			.burger-menu
+				display: block
+				// burger-menu__button
+				.burger-menu__button
+					position: fixed
+					top: 20px
+					right: 20px
+					border-radius: 50%
+					border: 1px solid #000
+					background: rgba(0, 0, 0, 0.5)
+					width: 50px
+					height: 50px
+					z-index: 30
+					&:hover
+						cursor: pointer
+					&:hover .burger-menu__line
+						filter: brightness(0.7)
+					.burger-menu__line,
+					.burger-menu__line::after,
+					.burger-menu__line::before
+						position: absolute
+						background: #ffffff
+						width: 25px
+						height: 3px
+					.burger-menu__line
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+					.burger-menu__line::after
+						content: ''
+						top: 7px
+					.burger-menu__line::before
+						content: ''
+						top: -7px
+				// burger-menu__nav
+				.burger-menu__nav
+					position: fixed
+					top: 0
+					right: -100%
+					width: 100%
+					background: #5a5a5a
+					color: #ffffff
+					overflow-y: auto
+					z-index: 20
+					ul
+						list-style-type: none
+						li
+							font-size: 20px
+							font-family: $Arial
+							text-transform: uppercase
+							padding: 25px 0
+							text-align: center
+							&:hover
+								transition: .5s
+								cursor: pointer
+								background: #4e4e4e
+							&:first-of-type
+								margin-top: 80px
+			// burger-menu_active
+			.burger-menu_active
+				// burger-menu__button
+				.burger-menu__button
+					&:hover .burger-menu__close
+						filter: brightness(0.7)
+					.burger-menu__line
+						display: none
+					.burger-menu__close
+					.burger-menu__close,
+					.burger-menu__close::after,
+					.burger-menu__close::before
+						position: absolute
+						width: 25px
+						height: 3px
+					.burger-menu__close
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+					.burger-menu__close::after
+						content: ''
+						top: 0px
+						transform: rotate(-45deg)
+						background: #ffffff
+					.burger-menu__close::before
+						content: ''
+						top: 0px
+						transform: rotate(45deg)
+						background: #ffffff
+				// burger-menu__nav
+				.burger-menu__nav
+					transition: .3s
+					right: 0
+				// burger-menu__overlay
+				.burger-menu__overlay
+					transition: .3s
+					position: fixed
+					top: 0
+					left: 0
+					background: rgba(0, 0, 0, 0.7)
+					width: 100vw
+					height: 100vh
+					z-index: 10
+
+			.top
+				.nav
+					display: none
 			.bottom
 				margin: 0
 				.title

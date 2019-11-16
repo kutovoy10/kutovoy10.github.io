@@ -1,7 +1,7 @@
 // ========== ANIMATION ==========
 
 AOS.init({
-  disable: function() {
+  disable: function () {
     var maxWidth = 1200;
     return window.innerWidth < maxWidth;
   }, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -133,13 +133,40 @@ function scrollToTop() {
 }
 
 
+// ========== BURGER-MENU ==========
+
+function burgerMenu(selector) {
+  let menu = document.querySelector('.burger-menu');
+  let button = document.querySelector('.burger-menu__button');
+  let nav = document.querySelectorAll('.burger-menu__nav');
+  let overlay = document.querySelector('.burger-menu__overlay');
 
 
+  button.onclick = () => {
+    let value = menu.classList.contains('burger-menu_active');
 
+    // add/remove class and add/remove scrolling
+    if(value == true) {
+      menu.classList.remove('burger-menu_active');      document.body.style.overflow = 'auto';
+    } else {
+      menu.classList.add('burger-menu_active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
 
+  // remove class when tap on link to scroll
+  for(let a of nav) {
+    a.addEventListener('click', function(){
+      menu.classList.remove('burger-menu_active');
+      document.body.style.overflow = 'auto';
+    });
+  };
 
-// Позиция скроллинга
-// window.onscroll = function() {
-//   let a = window.pageYOffset;
-//   console.log(a);
-// }
+  // remove class when tap on overlay
+  overlay.onclick = () => {
+    menu.classList.remove('burger-menu_active');
+    document.body.style.overflow = 'auto';
+  }
+};
+
+burgerMenu('.burger-menu');
