@@ -11,7 +11,22 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 3,
         arrows: false,
-        dots: true
+        dots: true,
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     });
 
     // video hover 
@@ -29,5 +44,16 @@ $(function () {
         }, 1000);
     });
 
+    // nav
 
+    $('.btn-for-media').click(function () {
+        $('header .wrapper .nav nav>ul').slideToggle('300ms', function () {});
+        $('.btn-for-media span').toggleClass('active-span');
+        $('.btn-for-media').toggleClass('active-btn-for-media');
+    });
+
+    $('.subnav-for-media').click(function () {
+        $('.submenu').slideToggle('300ms', function () {});
+        $('.nav nav ul li:hover i.fas.fa-caret-down').toggleClass('submenu-active');
+    });
 });
