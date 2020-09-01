@@ -1,0 +1,28 @@
+body {
+  background: #fff url(../img/bg.png) 50px -45px no-repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  width: 1199px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.scroll {
+  position: fixed;
+  top: 81px;
+  width: 450px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.arrow-down {
+  transform: rotate(180deg);
+  transition: .5s;
+}
+
+.btn-media {
+  display: none;
+}
