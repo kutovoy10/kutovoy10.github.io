@@ -302,6 +302,47 @@ body {
       background: #ffffff;
       padding: 50px 70px 50px 40px;
       box-sizing: border-box;
+      position: relative;
+    }
+
+    .tabs {
+      &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
+      &-nav__item {
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 14px;
+        border: 2px solid transparent;
+        box-sizing: border-box;
+        transition: all 0.5s;
+        font-weight: 700;
+        color: #a7a7a7;
+        text-transform: uppercase;
+        border-radius: 5px;
+
+        &+.tabs-nav__item {
+          margin-left: 20px;
+        }
+
+        &.is-active,
+        &:hover {
+          border-color: #87d818;
+          color: #000000;
+        }
+      }
+
+      .tab {
+        display: none;
+
+        &.is-active {
+          display: block;
+        }
+      }
     }
 
     &__blocks {
@@ -407,5 +448,7 @@ body {
 }
 
 /* --MAIN-- */
+
+
 
 @import "media";
