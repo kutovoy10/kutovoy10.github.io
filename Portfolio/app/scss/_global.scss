@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #e7e7e7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h3.title {
+    position: relative;
+    width: fit-content;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 12px 30px 12px 50px;
+    margin: 10px 10px 50px -52px;
+    color: #fff;
+    background-color: #87d818;
+
+    &:after {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 0px;
+        top: 100%;
+        border-width: 5px 6px;
+        border-style: solid;
+        border-color: #73bb11 #73bb11 transparent transparent;
+    }
+}
+
+h4.title {
+    display: inline-block;
+    color: #222222;
+    border-bottom: 2px solid #87d818;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+}
+
+h5.title {
+    color: #222222;
+    font-weight: 600;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+.text {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+}
+
+.section {
+    width: calc(100vw - 370px);
+    height: 100vh;
+    margin-left: 370px;
+    position: absolute;
+    box-sizing: border-box;
+
+    .container {
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+}
+
+.section.about-me,
+.section.home {
+    display: none !important;
+}
