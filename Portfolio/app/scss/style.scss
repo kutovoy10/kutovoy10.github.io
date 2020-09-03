@@ -378,6 +378,10 @@ body {
       }
     }
 
+    &__link {
+      cursor: pointer;
+    }
+
     &__img {
       display: block;
       width: 100%;
@@ -441,6 +445,104 @@ body {
       transform: scale(0);
       text-transform: uppercase;
       transition: all 0.4s;
+    }
+
+    .modal-list-page {
+      width: 100vw;
+      height: 100vh;
+      box-sizing: border-box;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      transition: all .4s;
+      transform: scale(1,0);
+
+      .overflow {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 111;
+      }
+
+      &__block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 40px 30px 30px 30px;
+        max-width: 95%;
+        max-height: 95%;
+      }
+
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 18px;
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        span {
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: #000;
+          transform: rotate(45deg);
+
+          &::after {
+            content: '';
+            transform: rotate(90deg);
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20px;
+            height: 2px;
+            background: #000;
+          }
+        }
+      }
+
+      .list-page {
+
+        &__title {
+          font-weight: 700;
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+
+        &__block {
+          padding-left: 20px;
+        }
+
+        &__link {
+          font-size: 14px;
+        }
+
+        &__item+.list-page__item {
+          margin-top: 5px;
+        }
+
+        &__item {
+          transition: .3s;
+          border-bottom: 1px solid transparent;
+          width: fit-content;
+          padding-bottom: 3px;
+
+          &:hover {
+            border-color: #87d818;
+          }
+        }
+      }
+    }
+
+    .modal-active {
+      transform: scale(1);
     }
   }
 
