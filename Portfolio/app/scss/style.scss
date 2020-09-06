@@ -77,7 +77,7 @@ body {
 
       a {
         display: block;
-        font-size: 16px;
+        font-size: 14px;
         text-align: center;
         font-weight: 500;
       }
@@ -126,7 +126,7 @@ body {
   /* home */
 
   .home {
-    box-shadow: 5px 0 13px 0px rgba(0, 0, 0, 0.7);
+    // box-shadow: 5px 0 13px 0px rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,7 +138,7 @@ body {
       right: 0;
       left: 0;
       bottom: 0;
-      filter: grayscale(50%) brightness(20%) blur(2px);
+      filter: grayscale(50%) brightness(20%) blur(1px);
       background: url(../img/bg-home.jpg);
       background-size: cover;
       background-position: center;
@@ -310,7 +310,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
       }
 
       &-nav__item {
@@ -347,20 +347,19 @@ body {
 
     &__blocks {
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
     }
 
     &__block {
-      width: 30%;
+      width: 22%;
       height: auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
       margin-bottom: 40px;
       position: relative;
       transition: all 0.4s;
+      margin-right: 4%;
 
       &:hover .portfolio__info::after,
       &:hover .portfolio__info::before {
@@ -376,10 +375,15 @@ body {
       &:hover .portfolio__img {
         filter: sepia(0.5) saturate(0.5) brightness(30%);
       }
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
     }
 
     &__link {
       cursor: pointer;
+      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
     }
 
     &__img {
@@ -456,7 +460,7 @@ body {
       left: 0;
       z-index: 100;
       transition: all .4s;
-      transform: scale(1,0);
+      transform: scale(1, 0);
 
       .overflow {
         width: 100%;
@@ -550,7 +554,5 @@ body {
 }
 
 /* --MAIN-- */
-
-
 
 @import "media";

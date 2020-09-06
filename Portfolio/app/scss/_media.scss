@@ -1,8 +1,39 @@
+// ========== >= 1650px ==========
+@media screen and (max-width:1650px) {
+  .main {
+
+    // portfolio
+    .portfolio {
+      &__block {
+        width: 30%;
+        margin-right: 5%;
+
+        &:nth-child(4n) {
+          margin-right: 5%;
+        }
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+}
+
+;
+
 // ========== >= 1200px ==========
-@media screen and (max-width:1200px) {};
+@media screen and (max-width:1200px) {}
+
+;
 
 // ========== >= 992px ==========
-@media screen and (max-width:992px) {};
+@media screen and (max-width:992px) {}
+
+;
 
 // ========== >= 768px ==========
-@media screen and (max-width:768px) {};
+@media screen and (max-width:768px) {}
+
+;
