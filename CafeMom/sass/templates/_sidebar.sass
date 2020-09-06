@@ -1,0 +1,479 @@
+.sidebar-main
+	.services_sidebar
+		width: 100%
+		padding-left: 0
+		margin-bottom: 35px
+.services_sidebar
+	width: 25%
+	padding-left: 30px
+	.title
+		margin-top: 80px
+		margin-bottom: 20px
+		font-family: $co-bold
+		font-size: 21px
+		color: $purple-black
+	.list
+		list-style-type: none
+		margin: 0
+		padding: 0
+		li
+			margin-bottom: 15px
+			&:last-child
+				margin-bottom: 0
+			a
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				text-decoration: none
+				.info
+					text-decoration: underline
+					color: $blue-dark
+					font-size: 16px
+					font-family: $co-reg
+					padding-right: 5px
+				i
+					color: $white
+					font-size: 28px
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					align-items: center
+					justify-content: center
+					background-color: $black
+					border-radius: 50%
+					margin-right: 25px
+					width: 60px
+					height: 60px
+					min-width: 60px
+					text-decoration: none
+
+.sub-side-soc-links
+	width: 100%
+	padding: 30px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	.title
+		color: $purple-black
+		font-size: 21px
+		font-family: $co-bold
+		margin: 0
+		margin-right: 25px
+	.list
+		list-style-type: none
+		margin: 0
+		padding: 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		li
+			margin-right: 25px
+			&:last-child
+				margin-right: 0
+			a
+				color: $white
+				font-size: 22px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 60px
+				height: 60px
+				text-decoration: none
+				border-radius: 50%
+				@include trans
+
+
+
+
+
+
+.sidebar-main
+	width: 25%
+	padding-left: 20px
+	padding-right: 20px
+
+.sidebar-main_encyclopedia
+	@include aside-container
+.sidebar-main_encyclopedia_title
+	.title
+		padding-top: 30px
+		@include aside-title
+.sidebar-main_encyclopedia_list
+	.position
+		padding-bottom: 30px
+		border-bottom: 1px solid #f1f1f1
+		margin-bottom: 35px
+		&:last-child
+			margin-bottom: 0
+	.position_title
+		margin-bottom: 10px
+		.link
+			line-height: 1.4
+			font-family: $co-reg
+			font-size: 16px
+			color: #3c6798
+	.position_text
+		margin-bottom: 10px
+		.text
+			line-height: 1.6
+			font-size: 14px
+			font-family: $os
+			color: #5c6c7e
+			margin: 0
+	.position_info
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		.comment,
+		.views,
+		.fav
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			color: #9d9d9d
+			font-size: 14px
+			font-family: $co-reg
+			margin-right: 30px
+			i
+				color: #5392d8
+				margin-right: 5px
+				font-size: 16px
+.sidebar-main_fav
+	@include aside-container
+.sidebar-main_fav_title
+	.title
+		@include aside-title
+.sidebar-main_fav_list
+	.position
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: flex-start
+		margin-bottom: 45px
+		&:last-child
+			margin-bottom: 0
+	.position_img
+		min-width: 70px
+		max-width: 70px
+		margin-right: 10px
+		img
+			border-radius: 50%
+	.position_info
+		.subscribers
+			display: block
+			font-family: $os
+			font-size: 12px
+			color: #5c6c7e
+			margin-top: 10px
+		.link
+			font-size: 15px
+			color: #3c6798
+			font-family: $co-reg
+			margin-bottom: 10px
+			line-height: 1.6
+.sidebar-main_fav_show-more
+	margin-top: 40px
+	text-align: right
+	margin-bottom: 40px
+	.show-more
+		text-decoration: none
+		font-size: 14px
+		font-family: $os
+		color: #3c6798
+		padding: 5px 12px
+		border: 2px solid #f7f7f7
+		border-radius: 14px
+		@include trans
+		display: inline-block
+.sidebar-main_banner
+	margin-top: 40px
+	margin-bottom: 40px
+	position: relative
+	span
+		position: absolute
+		top: 40px
+		right: 70px
+		width: 150px
+		text-align: center
+		font-size: 23px
+		line-height: 34px
+		font-family: $co-reg
+		color: $purple-black
+.sidebar-main_banner.border
+	padding-top: 50px
+	position: relative
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		left: -20px
+		right: -20px
+		top: 0
+		// width: 100%
+		height: 1px
+		background-color: #f1f1f1
+
+.sidebar-main_news
+	@include aside-container
+.sidebar-main_news_title
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 30px
+	.link
+		font-size: 14px
+		font-family: $os
+		color: #3c6798
+		padding: 4px 8px
+		border: 2px solid #f3f3f3
+		border-radius: 10px
+	.title
+		@include aside-title
+		margin-bottom: 0
+.sidebar-main_news_list
+	.position
+		margin-bottom: 30px
+		.link
+			color: #3c6798
+			font-size: 15px
+			font-family: $co-reg
+		img
+			margin-top: 25px
+			margin-bottom: 15px
+		.date
+			font-family: $os
+			font-size: 12px
+			color: #5c6c7e
+		.info
+			margin-bottom: 0
+			margin-top: 
+			line-height: 2
+			font-family: $os
+			font-size: 13px
+			color: #5c6c7e
+
+
+.sidebar-main_home
+	margin-top: 80px
+	margin-bottom: 80px
+	.position
+		padding: 0
+		margin-right: -20px
+		&.teddy
+			a
+				background-color: #a670b0
+		&.comments
+			a
+				background-color: #5392d8
+		a
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 35px 35px 35px 20px
+			img
+				min-width: 50px
+				max-width: 60px
+			.info
+				color: $white
+				display: inline
+				border: none
+				text-decoration: none
+				padding-left: 15px
+				font-size: 19px
+				font-family: $co-bold
+				// border-bottom: 1px solid $black
+
+
+.sidebar-main
+	>.border
+		margin-top: 30px
+		margin-bottom: 30px
+		background-color: #f1f1f1
+		height: 1px
+		width: 100%
+.sidebar-news-all
+	position: relative
+	margin-bottom: 30px
+	padding-bottom: 30px
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		left: -20px
+		right: -20px
+		bottom: 0
+		height: 1px
+		background-color: #f1f1f1
+.sidebar-news-all_title
+	@include aside-container
+	.title
+		@include aside-title
+
+.sidebar-news-all_list
+	text-align: right
+	.list	
+		list-style-type: none
+		margin: 0
+		padding: 0
+		text-align: left
+		li
+			margin-bottom: 25px
+			.date
+				display: block
+				margin-bottom: 10px
+				font-family: $os
+				font-size: 12px
+				color: #5c6c7e
+			.link
+				font-family: $co-reg
+				font-size: 15px
+				color: #3c6798
+	.show-more
+		text-align: right
+		text-decoration: none
+		padding: 4px 12px
+		font-family: $os
+		font-size: 14px
+		color: #3c6798
+		border: 2px solid #f1f1f1
+		@include trans
+		border-radius: 10px
+.sidebar-last-commets_list
+	text-align: right
+	.show-more
+		text-align: right
+		text-decoration: none
+		padding: 4px 12px
+		font-family: $os
+		font-size: 14px
+		color: #3c6798
+		border: 2px solid #f1f1f1
+		@include trans
+		border-radius: 10px
+	.position
+		text-align: left
+		margin-bottom: 15px
+		padding-bottom: 15px
+		border-bottom: 1px solid #f1f1f1
+	.position_head
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: flex-start
+		margin-bottom: 15px
+		.__img
+			width: 50px
+			height: 50px
+			min-width: 50px
+			max-width: 50px
+			margin-right: 15px
+			img
+				border-radius: 50%
+		.__info
+			.title
+				display: block
+				margin-bottom: 0px
+				color: $black
+				font-family: $os
+				font-size: 15px
+			.time
+				font-family: $os
+				font-size: 13px
+				color: #9e9e9e
+	.position_info
+		.link
+			font-family: $co-reg
+			font-size: 16px
+			color: #3c6798
+		.text
+			margin-top: 10px
+			margin-bottom: 0
+			font-family: $os
+			font-size: 14px
+			color: #5c6c7e
+.sidebar-main_banner-sex
+	position: relative
+	margin-bottom: 30px
+	.__text
+		position: absolute
+		bottom: 45px
+		left: 0
+		right: 0
+		text-align: center
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		align-items: center
+		.title
+			font-family: $co-bold
+			font-size: 21px
+			color: #4f6c8d
+			text-align: center
+			margin-top: 0
+			margin-bottom: 15px
+			.bold
+				display: block
+				font-size: 28px
+		.info
+			text-align: center
+			font-family: $co-reg
+			font-size: 16px
+			color: #4f6c8d
+			margin-top: 0
+			margin-bottom: 10px
+		.date
+			font-family: $co-bold
+			font-size: 17px
+			color: #24ae87
+			margin-top: 0
+			margin-bottom: 0
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			justify-content: center
+			line-height: 1
+			i
+				margin-right: 10px
+				position: relative
+				top: -2px
+

@@ -1,0 +1,332 @@
+.sidebar-main
+	&.sitemap
+		padding-top: 30px
+
+.about-us_content
+	&.sitemap
+		padding-top: 30px
+		padding-right: 0
+		background-color: $white
+
+.about-us_content_title
+	margin-bottom: 30px
+	.title
+		@include title
+
+.about-us_content_main
+	padding: 20px 30px
+	background-color: #f8f8f8
+	height: 100%
+	margin-bottom: 50px
+.about-us_content_main_home
+	margin-bottom: 10px
+	.title
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		position: relative
+		font-size: 20px
+		font-family: $co-bold
+		color: #5c6c7e
+		margin: 0
+		@include trans
+		.icon
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-right: 20px
+			color: $white
+			width: 46px
+			height: 46px
+			background-color: #ff6354
+			border-radius: 50%
+
+.about-us_content_main_list
+	.list
+		list-style-type: none
+		margin: 0
+		padding: 0
+		margin-left: 20px
+		position: relative
+		padding-left: 55px
+		border-left: 1px solid #bdc3c7
+		padding-top: 22px
+		a
+			// text-decoration: none
+			@include trans
+
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 1px
+			height: 22px
+			background-color: $white
+			left: -1px
+			bottom: 0
+		>li
+			margin-bottom: 15px
+			position: relative
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				top: 23px
+				left: -55px
+				height: 1px
+				width: 50px
+				background-color: #bdc3c7
+			&:last-child
+				margin-bottom: 0
+			&.has-child
+				flex-wrap: wrap
+				&.open
+					.sub-list
+						display: block
+					.circle
+						background-color: #d25e53
+						&:before
+							content: '\2212'
+				.circle
+					cursor: pointer
+					background-color: #ff6354
+					position: relative
+					&:before
+						content: '+'
+						display: block
+						position: absolute
+						top: 50%
+						left: 50%
+						color: $white
+						font-size: 28px
+						transform: translate(-50%, -50%)
+			.circle
+				width: 45px
+				height: 45px
+				background-color: #bdc3c7
+				border-radius: 50%
+				margin-right: 10px
+			a
+				position: relative
+				font-size: 18px
+				line-height: 46px
+				font-family: $co-bold
+				color: #5c6c7e
+				&:before
+			.sub-sub-list
+				width: 100%
+				list-style-type: none
+				margin-top: 0px
+				margin-left: 12px
+				padding-left: 50px
+				position: relative
+				border-left: 1px solid #bdc3c7
+				display: none
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					width: 1px
+					height: 17px
+					background-color: $white
+					left: -1px
+					bottom: 0
+				>li
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					align-items: center
+					position: relative
+					margin-bottom: 10px
+					&.has-child
+						flex-wrap: wrap
+						&.open
+							.sub-sub-sub-list
+								display: block
+							.sub-sub-circle
+								&:before
+									content: '\2212'
+						.sub-sub-circle
+							background-color: #ff6354
+							position: relative
+							cursor: pointer
+							&:before
+								content: '+'
+								display: block
+								position: absolute
+								line-height: 1
+								top: 50%
+								left: 50%
+								font-size: 15px
+								color: $white
+								transform: translate(-50%, -50%)
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						top: 8px
+						left: -50px
+						height: 1px
+						width: 45px
+						background-color: #bdc3c7
+					.sub-sub-circle
+						width: 11px
+						height: 11px
+						margin-right: 10px
+						background-color: #bdc3c7
+						border-radius: 50%
+					a
+						line-height: 1
+						font-family: $co-reg
+						font-size: 15px
+						color: #5c6c7e
+			.sub-list
+				width: 100%
+				list-style-type: none
+				margin-top: 10px
+				margin-left: 21px
+				padding-left: 50px
+				border-left: 1px solid #bdc3c7
+				position: relative
+				display: none
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					width: 1px
+					height: 22px
+					background-color: $white
+					left: -1px
+					bottom: 0
+				>li
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					align-items: center
+					position: relative
+					&.has-child
+						flex-wrap: wrap
+						&.open
+							.sub-sub-list
+								display: block
+							.sub-circle
+								background-color: #d25e53
+								&:before
+									content: '\2212'
+						.sub-circle
+							background-color: #ff6354
+							position: relative
+							cursor: pointer
+							&:before
+								content: '+'
+								display: block
+								position: absolute
+								line-height: 1
+								top: 50%
+								left: 50%
+								font-size: 20px
+								color: $white
+								transform: translate(-50%, -50%)
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						top: 23px
+						left: -50px
+						height: 1px
+						width: 45px
+						background-color: #bdc3c7
+					a
+						font-size: 16px
+					.sub-circle
+						width: 25px
+						height: 25px
+						margin-right: 10px
+						background-color: #bdc3c7
+						border-radius: 50%
+
+			.sub-sub-sub-list
+				width: 100%
+				list-style-type: none
+				margin-top: 5px
+				padding-top: 15px
+				margin-left: 5px
+				padding-left: 50px
+				position: relative
+				border-left: 1px solid #bdc3c7
+				display: none
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					width: 1px
+					height: 17px
+					background-color: $white
+					left: -1px
+					bottom: 0
+				>li
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					align-items: center
+					position: relative
+					margin-bottom: 10px
+					&.has-child
+						flex-wrap: wrap
+						&.open
+							.sub-sub-sub-circle
+								&:before
+									content: '\2212'
+						.sub-sub-sub-circle
+							background-color: #ff6354
+							position: relative
+							cursor: pointer
+							&:before
+								content: '+'
+								display: block
+								position: absolute
+								line-height: 1
+								top: 50%
+								left: 50%
+								font-size: 15px
+								color: $white
+								transform: translate(-50%, -50%)
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						top: 8px
+						left: -50px
+						height: 1px
+						width: 45px
+						background-color: #bdc3c7
+					.sub-sub-sub-circle
+						width: 11px
+						height: 11px
+						margin-right: 10px
+						background-color: #bdc3c7
+						border-radius: 50%
+					a
+						line-height: 1
+						font-family: $co-reg
+						font-size: 15px
+						color: #5c6c7e

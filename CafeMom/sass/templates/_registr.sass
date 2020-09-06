@@ -1,0 +1,312 @@
+section.registr
+	display: flex
+	margin: 40px 0 50px 15px
+	.reg_container
+		width: 1021px
+		.reg_title
+			h2
+				padding-left: 30px
+		.reg_content
+			background-color: #f8f8f8
+			padding-bottom: 170px
+			border-radius: 18px
+			.reg_title-text
+				font-size: 15px
+				line-height: 25px
+				font-family: $os
+				padding: 30px 20px
+				a.link
+					color: #5392d8
+
+			.form_and_feedback
+				display: flex
+				margin-top: 35px
+				padding-left: 20px
+
+				.form
+					width: 670px
+					background-color: #f7f3f1
+					padding: 45px 75px
+					position: relative
+					form
+						h3
+							font-size: 21px
+							margin-bottom: 30px
+							color: $purple-black
+						.form-name
+							display: flex
+							align-items: center
+							justify-content: space-between
+							margin-bottom: 15px
+							p
+								font-size: 13px
+								line-height: 16px
+								color: $blue-black
+								font-family: $co-reg
+								margin-bottom: 0
+							input
+								width: 75%
+								outline: none
+								height: 50px
+								border: 1px solid #dbe4ed
+								border-radius: 8px
+								font-size: 15px
+								font-family: $os
+								line-height: 35px
+								color: $blue-black
+								padding-left: 20px
+						.form-surname
+							@extend .form-name
+						.form-birth-date
+							@extend .form-name
+							.date
+								width: 75%
+								display: flex
+								justify-content: space-between
+								select.day
+									outline: none
+									border: 1px solid #dbe4ed
+									border-radius: 8px
+									padding: 11px 0 15px 15px
+									font-size: 15px
+									font-family: $os
+									line-height: 35px
+									color: $blue-black
+									width: 18%
+								select.month
+									@extend select.day
+									width: 40%
+								select.year
+									@extend select.day
+									width: 32.8%
+						.form-your-child
+							display: flex
+							align-items: center
+							justify-content: space-between
+							margin-bottom: 15px
+							.form-your-child_title
+								p
+									@include reg_p
+							.form-your-child_right-block
+								display: flex
+								align-items: center
+								justify-content: space-between
+								width: 75%
+								select.your-child
+									outline: none
+									border: 1px solid #dbe4ed
+									border-radius: 8px
+									padding: 11px 0 15px 15px
+									font-size: 15px
+									font-family: $os
+									line-height: 35px
+									color: $blue-black
+									width: 63.5%
+							.pregnant
+								input[type='checkbox']
+									display: none
+									& + label
+										&:before
+											content: "\2714"
+											color: transparent
+											display: inline-block
+											border: 1px solid #dbe4ed
+											border-radius: 4px
+											background-color: #ffffff
+											font-size: 16px
+											margin-right: 12px
+											height: 20px
+											width: 20px
+											text-align: center
+											padding-top: 2px
+									&:checked + label
+										&:before
+											color: #29b08a
+								label
+									display: flex
+									align-items: center
+									@include reg_p
+									font-weight: 400
+									cursor: pointer
+						.form-country
+							@include reg
+							p
+								@include reg_p
+							select
+								width: 75%
+								outline: none
+								border: 1px solid #dbe4ed
+								border-radius: 8px
+								padding: 11px 0 15px 15px
+								font-size: 15px
+								font-family: $os
+								line-height: 35px
+								color: $blue-black
+						.form-city
+							@extend .form-name
+						.form-e-mail
+							@extend .form-name
+						.form-password
+							@include reg
+							p
+								@include reg_p
+							.right
+								display: flex
+								align-items: center
+								justify-content: space-between
+								width: 75%
+								input
+									@include reg_input
+									width: 55%
+						.form-captcha
+							@include reg
+							margin-bottom: 35px
+							.form-captcha_title
+								p
+									@include reg_p
+							.form-captcha_right-block
+								display: flex
+								align-items: center
+								justify-content: space-between
+								width: 75%
+								input
+									@include reg_input
+									width: 137px
+						.form-your-agree
+							display: flex
+							justify-content: center
+							input[type='checkbox']
+								display: none
+								& + label
+									&:before
+										content: "\2714"
+										color: transparent
+										display: inline-block
+										border: 1px solid #dbe4ed
+										border-radius: 4px
+										background-color: #ffffff
+										font-size: 16px
+										margin-right: 12px
+										height: 20px
+										width: 20px
+										text-align: center
+										padding-top: 2px
+								&:checked + label
+									&:before
+										color: #29b08a
+							label
+								@include reg_p
+								font-weight: 400
+								cursor: pointer
+								a
+									color: #5392d8
+						.form-button-reg
+							display: flex
+							justify-content: center
+							a
+								font-size: 15px
+								line-height: 20px
+								font-family: $co-reg
+								color: #ffffff
+								background-color: #24ae87
+								border-radius: 44px
+								padding: 18px 55px
+								margin-top: 40px
+
+				.feedback
+					width: 295px
+					padding: 45px 40px 0 50px
+					h3
+						padding-right: 20px
+						font-size: 21px
+						margin-bottom: 30px
+						color: $purple-black
+					p
+						font-size: 15px
+						line-height: 25px
+						font-family: $os
+						color: $blue-black
+						margin-bottom: 30px
+					.block-links
+						.vk
+							@include feedback_links
+							img
+								margin-right: 20px
+							a
+								font-size: 15px
+								font-family: $os
+								line-height: 35px
+								color: $blue-black
+								font-weight: 700
+								text-decoration: underline
+								&:hover
+									color: #5392d8
+						.facebook
+							@extend .vk
+						.odnoklassniki
+							@extend .vk
+						.google-plus
+							@extend .vk
+						.twitter
+							@extend .vk
+						.my-world
+							@extend .vk
+
+.button
+	width: 300px
+	height: 60px
+	margin: 0 auto
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	background-color: orange
+	text-align: center
+.overlay
+	position: fixed
+	z-index: 999
+	width: 100%
+	height: 100vh
+	top: 0
+	left: 0
+	background-color: rgba(0, 0, 0, .9)
+	display: none
+.popup
+	position: fixed
+	z-index: 1000
+	width: 300px
+	height: 300px
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	padding: 40px
+	background-color: green
+	color: #fff
+	.close-popup
+		position: fixed
+		z-index: 1000
+		top: 15px
+		right: 15px
+		width: 23px
+		height: 23px
+		cursor: pointer
+		&:before
+			content: ''
+			background-color: #fff
+			position: fixed
+			z-index: 1000
+			height: 1px
+			width: 31px
+			top: 11px
+			left: -4px
+			transform: rotate(-45deg)
+		&:after
+			content: ''
+			background-color: #fff
+			position: fixed
+			z-index: 1000
+			height: 1px
+			width: 31px
+			top: 11px
+			transform: rotate(45deg)
+			left: -4px
+

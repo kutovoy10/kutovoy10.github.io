@@ -1,0 +1,51 @@
+.videos_content_main.photo
+	.position_img
+		.scale
+			right: auto
+			left: 50%
+			top: 20px
+			transform: translateX(-50%)
+		.text
+			position: absolute
+			top: 60px
+			left: 50%
+			transform: translateX(-50%)
+			font-family: $co-reg
+			font-size: 17px
+			color: $white
+			margin: 0
+			z-index: 6
+			white-space: nowrap
+			opacity: 0
+			visibility: hidden
+			@include trans
+		.protect
+			top: auto
+			left: 50%
+			bottom: 50px
+			transform: translateX(-50%)
+.video-modal .video-modal_content_video img
+	height: auto
+	margin-left: auto
+	margin-right: auto
+.video-add-modal.photos
+	.video-add-modal_form
+		.files-container
+			.position
+				&.added
+					.play-button
+						display: none
+				.play-button
+					width: 56px
+					height: 44px
+					background-color: transparent
+					background-image: url(../img/add-photo-modal.png)
+					background-repeat: no-repeat
+					background-size: cover
+					border-radius: 0
+					.arrow
+						display: none
+					&:before
+						content: none
+					&:after
+						content: none

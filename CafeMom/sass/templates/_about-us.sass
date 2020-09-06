@@ -1,0 +1,333 @@
+.about-us
+.about-us_container
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+.about-us_title
+	width: 100%
+	background-color: $white
+	padding-top: 40px
+	padding-right: 50px
+	padding-left: 75px
+	padding-bottom: 35px
+	.title
+		line-height: 1
+		margin: 0
+		font-size: 25px
+		font-family: $co-bold
+		color: $blue-font
+.about-us_content
+	width: 75%
+	padding-top: 30px
+	padding-left: 30px
+	padding-right: 30px
+	background-color: #f8f8f8
+	margin-bottom: 45px
+.about-us_content_info
+	padding: 45px 55px 30px 35px
+	background-color: $white
+	border-radius: 5px
+	.sub-title
+		margin-top: 0
+		margin-bottom: 15px
+		line-height: 1.6
+		color: $purple-black
+		font-family: $co-reg
+		font-size: 16px
+	.info
+		font-size: 15px
+		font-family: $os
+		color: #5c6c7e
+		margin-top: 0
+		margin-bottom: 10px
+		a
+			color: $blue-dark
+.about-us_content_services
+	margin-top: 40px
+	.title
+		margin-top: 0
+		margin-bottom: 30px
+		color: $blue-font
+		font-size: 25px
+		font-family: $co-bold
+		padding-left: 45px
+	.list
+		list-style-type: none
+		margin: 0
+		padding: 0
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr
+		li
+			position: relative
+			font-size: 0
+			padding: 25px 30px 80px
+			&:nth-child(1)
+				background-color: #5392d8
+			&:nth-child(2)
+				background-color: #ff6354
+			&:nth-child(3)
+				background-color: #a670b0
+			&:nth-child(4)
+				background-color: #2ead73
+			&:nth-child(5)
+				background-color: #f44d69
+			&:nth-child(6)
+				background-color: #627abc
+			.title
+				text-decoration: underline
+				color: $white
+				margin-top: 0
+				margin-bottom: 10px
+				display: block
+				font-size: 20px
+				font-family: $co-reg
+				padding-left: 0
+				&:hover
+					text-decoration: none
+			.text
+				color: $white
+				font-family: $os
+				margin-bottom: 0
+				font-size: 15px
+			img
+				position: absolute
+				bottom: 30px
+				right: 30px
+
+
+
+.about-us_content_vogue_title
+	@include title-container
+	.title
+		@include title
+.about-us_content_vogue_list
+	background-color: $white
+	border-radius: 10px
+	padding: 35px 40px 50px 45px
+	.__title
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 45px
+		.info
+			font-size: 20px
+			font-family: $co-reg
+			color: #5c6c7e
+			margin: 0
+		.link
+			cursor: pointer
+			padding: 15px 30px
+			line-height: 1
+			font-size: 15px
+			font-family: $co-reg
+			color: $green-txt
+			text-decoration: none
+			border-radius: 15px
+			border: 1px solid $green-txt
+			@include trans
+	.__list
+		.position
+			margin-bottom: 50px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			align-items: center
+			&:last-child
+				margin-bottom: 0
+		.position_info
+			text-align: center
+			margin-right: 60px
+			.top
+				display: block
+				font-size: 16px
+				font-family: $co-reg
+				color: $blue-font
+				line-height: 1
+			.number
+				color: $blue-font
+				font-size: 23px
+				font-family: $co-bold
+				line-height: 1
+		.position_req
+			max-width: 270px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			&.gold
+				.__img
+					i
+						background-color: #fbd53c
+			&.silver
+				.__img
+					i
+						background-color: #bdc3c7
+			&.bronze
+				.__img
+					i
+						background-color: #ed9a84
+			.__img
+				position: relative
+				margin-right: 20px
+				width: 65px
+				min-width: 65px
+				max-width: 65px
+				img
+					border-radius: 50%
+				i
+					position: absolute
+					top: 5px
+					right: -10px
+					width: 24px
+					height: 24px
+					color: $white
+					font-size: 13px
+					line-height: 24px
+					text-align: center
+					border-radius: 50%
+			.__info
+				.status
+					margin-bottom: 5px
+					line-height: 1
+					font-size: 12px
+					font-family: $co-reg
+					color: #5c6c7e
+				.name
+					text-decoration: underline
+					display: inline-block
+					margin-bottom: 5px
+					font-size: 13px
+					font-family: $os
+					color: $blue-font
+				.number
+					display: block
+					font-family: $co-reg
+					font-size: 12px
+					color: #a4abb4
+.about-us_content_slider_title
+	@include title-container
+	.title
+		@include title
+.about-us_content_slider_main
+	position: relative
+	background-color: $white
+	border-radius: 10px
+	padding: 50px 50px 55px
+.about-us_content_slider_main_container
+	.slick-slide
+		margin: 0 13px
+	.position
+		margin-right: 25px
+		a
+			height: 80px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			justify-content: center
+			@include trans
+			border: 1px solid #d4e2f3
+			padding: 17px
+			cursor: pointer
+.about-us_content_slider_main_arrows
+	height: 0
+	.slick-next
+		position: absolute
+		top: 50%
+		right: 40px
+		transform: translateY(-50%)
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 0
+		background-color: #bdc3c7
+		color: $white
+		font-size: 18px
+		border-radius: 50%
+		border: none
+		outline: 0
+		width: 36px
+		height: 36px
+		@include trans
+		&:before
+			content: "\e907"
+			font-family: 'icomoon'
+	.slick-prev
+		position: absolute
+		top: 50%
+		left: 40px
+		transform: translateY(-50%)
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 0
+		background-color: #bdc3c7
+		color: $white
+		font-size: 18px
+		border-radius: 50%
+		border: none
+		outline: 0
+		width: 36px
+		height: 36px
+		@include trans
+		&:before
+			content: "\e908"
+			font-family: 'icomoon'
+
+.about-us_content_soc_title
+	@include title-container
+	.title
+		@include title
+.about-us_content_soc_list
+	padding-bottom: 20px
+	.list
+		list-style-type: none
+		margin: 0
+		padding: 0
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr
+		li
+			a
+				display: block
+				height: 100px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				justify-content: center
+				position: relative
+				color: $white
+				font-size: 20px
+				font-family: $co-reg
+				text-decoration: none
+				@include trans
+				i
+					position: absolute
+					color: $white
+					font-size: 30px
+					top: 50%
+					left: 40px
+					transform: translateY(-50%)

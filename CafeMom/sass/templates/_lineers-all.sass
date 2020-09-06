@@ -1,0 +1,228 @@
+.lineers-all_container
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+.lineers-all_title
+	width: 100%
+	@include title-container
+	.title
+		@include title
+.lineers-all_content
+	width: 75%
+	padding: 30px
+	background-color: #f8f8f8
+.lineers-all_content_head
+	.informers_content_usage
+		background-color: #d9e0e5
+.lineers-all_content_head_info
+	padding-top: 20px
+	margin-bottom: 30px
+	.text
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		margin: 0
+		font-family: $os
+		font-size: 20px
+		color: #5c6c7e
+		.link
+			color: #5392d8
+			font-weight: 700
+			margin-left: 10px
+			border: none
+			padding: 0
+			@include trans
+.informers_content_usage_title
+	.text
+		text-align: center
+		font-family: $co-reg
+		font-size: 17px
+		margin: 0
+		color: #8b9da9
+.lineers-all_content_steps_title
+	@include title-container
+	.text
+		@include title
+		font-size: 20px
+
+.lineers-all_content_steps_list
+	.position
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: stretch
+		background-color: #a670b0
+		&.green
+			background-color: #2ead73
+			.position_img
+				background-color: #268d5e
+				&:after
+					border-color: #268d5e transparent transparent transparent
+		&.purple
+			background-color: #a670b0
+			.position_img
+				background-color: #825a8a
+				&:after
+					border-color: #825a8a transparent transparent transparent
+		&.blue
+			background-color: #5392d8
+			.position_img
+				background-color: #4d86c5
+				&:after
+					border-color: #4d86c5 transparent transparent transparent
+	.position_img
+		width: 36.6666%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			bottom: -12px
+			left: 50%
+			transform: translateX(-50%)
+			width: 0
+			height: 0
+			border-style: solid
+			z-index: 11
+			border-width: 12px 12px 0 12px
+			border-color: #007bff transparent transparent transparent
+	.position_info
+		width: 63.3333%
+		padding: 55px 50px 70px 40px
+		.head
+			margin-bottom: 20px
+			font-family: $co-bold
+			font-size: 20px
+			color: $white
+		.sub-list
+			list-style-type: none
+			margin: 0
+			padding: 0
+			padding-left: 15px
+			li
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: flex-start
+				.letter
+					min-width: 20px
+					font-family: $co-bold
+					font-size: 18px
+					color: #bec8d2
+					margin-right: 0px
+		.list
+			list-style-type: none
+			margin: 0
+			padding: 0
+			li
+				margin-bottom: 8px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: flex-start
+				&.has-child
+					flex-wrap: wrap
+					.text
+						flex: 1
+				.number
+					margin-right: 10px
+					font-family: $co-bold
+					font-size: 20px
+					color: #fbd53c
+					min-width: 25px
+				.text
+					color: $white
+					line-height: 1.5
+					font-family: $os
+					font-size: 14px
+					color: $white
+		.foot
+			font-family: $os
+			font-size: 14px
+			margin-top: 20px
+			margin-bottom: 0
+			color: #fbd53c
+
+	.position_sub
+		background-image: url(../img/lineer-step-end.png)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		padding-top: 40px
+		padding-bottom: 40px
+		padding-left: 40px
+		padding-right: 40px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.position_title
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			.text
+				font-family: $co-bold
+				font-size: 24px
+				color: #4d86c5
+				margin: 0
+				margin-left: 15px
+		.position_link
+			.link
+				padding: 15px 30px
+				line-height: 1
+				color: $white
+				background-color: #24ae87
+				font-family: $co-reg
+				font-size: 15px
+				border-radius: 20px
+				border: none
+				@include trans
+.lineers-content_list_title
+	@include title-container
+	.title
+		@include title
+		font-size: 20px
+.lineers-content_list_show-all
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-bottom: 30px
+	.link
+		padding: 15px 30px
+		line-height: 1
+		color: $white
+		background-color: #24ae87
+		font-family: $co-reg
+		font-size: 15px
+		border-radius: 20px
+		border: none
+		@include trans

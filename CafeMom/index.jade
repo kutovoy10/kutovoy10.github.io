@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include ./layouts/head.jade
+    //- PENSIA CALC media ---
+  body
+    .wrapper
+
+      include ./layouts/header-loged.jade
+
+      include ./layouts/breadcrumbs.jade
+
+      .block-gallery
+
+        include ./layouts/gallery.jade
+
+        aside.sidebar-main
+
+          include ./layouts/service-sidebar.jade
+          include ./layouts/sidebar-encyclopedia.jade
+          include ./layouts/sidebar-banner.jade
+
+      include ./layouts/footer.jade
+
+    include ./layouts/search.jade
+
+    include ./layouts/foot.jade

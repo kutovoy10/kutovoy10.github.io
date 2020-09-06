@@ -1,0 +1,7 @@
+section.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  section.gallery .gallery {
+    width: 75%; }

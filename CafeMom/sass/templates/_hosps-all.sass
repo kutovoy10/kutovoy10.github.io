@@ -1,0 +1,812 @@
+.sidebar-main.hospital
+	.sidebar-main_banner
+		margin-top: 0
+
+
+
+.hospitals_container
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+.hospitals_banner
+	width: 100%
+	margin: 30px
+	background-color: #f0f6f6
+	padding: 25px 30px 35px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+.hospitals_banner_img
+	margin-right: 25px
+	min-width: 250px
+	max-width: 250px	
+
+.hospitals_banner_info
+	.title
+		margin-top: 0
+		margin-bottom: 20px
+		font-size: 25px
+		font-family: $co-bold
+		color: #3c6798
+	.text
+		line-height: 2.1
+		margin-bottom: 20px
+		font-family: $os
+		font-size: 15px
+		color: #5c6c7e
+	.info
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		font-size: 14px
+		color: #5c6c7e
+		font-family: $co-reg
+		.icon
+			color: #bdc3c7
+			width: 45px
+			height: 45px
+			background-color: $white
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			justify-content: center
+			font-size: 18px
+			border-radius: 50%
+			margin-right: 20px
+
+.hospitals_content
+	width: 75%
+	padding-left: 30px
+	padding-top: 35px
+	border-top: 1px solid #f4f4f4
+	// background-color: #f8f8f8
+.hospitals_content_filter_country_title
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin-bottom: 30px
+	.title
+		margin: 0
+		font-size: 25px
+		font-family: $co-bold
+		color: #4f6c8d
+	.btn_country
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		font-family: $os
+		font-size: 14px
+		color: #5c6c7e
+		padding: 0
+		padding-bottom: 0px
+		background-color: transparent
+		outline: 0
+		border: none
+		border-bottom: 1px dotted #5c6c7e
+		@include trans
+		position: relative
+		i
+			color: #ff6354
+			font-size: 14px
+			position: absolute
+			left: -18px
+			top: 4px
+
+.hospitals_content_filter_country_form
+	margin-left: -30px
+	background-color: #f4f8f8
+	padding: 30px
+	.input-container
+		width: 100%
+		position: relative
+		i
+			position: absolute
+			top: 50%
+			right: 20px
+			color: #2ead73
+			font-size: 24px
+			transform: translateY(-50%)
+		.input-text
+			width: 100%
+			padding: 15px 50px 15px 25px
+			border: 2px solid #2ead73
+			border-radius: 30px
+			&:focus
+				outline: 0
+.hospitals_content_filter_city
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	padding-top: 30px
+	padding-bottom: 30px
+	// padding-right: 30px
+.hospitals_content_filter_city_dropdown
+	position: relative
+	max-width: 280px
+	min-width: 280px
+	margin-right: 70px
+	&.open
+		.input-container
+			.input-text
+				border-radius: 10px 10px 0 0
+				border-bottom: 2px solid transparent
+			.arrow
+				transform: rotate(180deg)
+		.list
+			visibility: visible
+			opacity: 1
+	.list
+		@include trans
+		opacity: 0
+		visibility: hidden
+		list-style-type: none
+		margin: 0
+		padding: 0
+		max-height: 200px
+		overflow-y: auto
+		padding-top: 15px
+		padding-bottom: 15px
+		position: absolute
+		top: calc(100% - 2px)
+		left: 0
+		right: -0px
+		background-color: $white
+		border: 2px solid #00c494
+		border-right: 0
+		border-radius: 0 0 5px 5px
+		border-top: 0
+		z-index: 100
+		padding-bottom: 10px
+		padding-right: 5px
+		&::-webkit-scrollbar
+			width: 2px
+			border-radius: 20px
+			background-color: #00c494
+		&::-webkit-scrollbar-thumb
+			width: 100%
+			background-color: $white
+			height: 15px
+			border-radius: 20px
+		li
+			padding-left: 10px
+			padding-right: 10px
+			border-bottom: 1px solid #f1f1f1
+			margin: 5px 0
+			padding-bottom: 3px
+			padding-top: 3px
+			cursor: pointer
+			&.empty
+				cursor: default
+	.input-container
+		position: relative
+		.input-text
+			padding: 15px 25px
+			border: 2px solid #00c494
+			border-radius: 10px
+			line-height: 1
+			outline: 0
+			width: 100%
+		.arrow
+			position: absolute
+			right: 20px
+			@include trans
+			top: 50%
+			transform: translateY(-50%)
+			width: 0
+			height: 0
+			border-style: solid
+			cursor: pointer
+			border-width: 8px 5.5px 0 5.5px
+			border-color: #00c494 transparent transparent transparent;
+.hospitals_content_filter_city_title
+	margin-right: auto
+	.title
+		margin: 0
+		font-size: 25px
+		font-family: $co-bold
+		color: #4f6c8d
+
+.hospitals_content_filter_city_btn
+	.btn_city
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		font-family: $os
+		font-size: 14px
+		color: #5c6c7e
+		padding: 0
+		padding-bottom: 0px
+		background-color: transparent
+		outline: 0
+		border: none
+		border-bottom: 1px dotted #5c6c7e
+		@include trans
+		position: relative
+		i
+			color: #ff6354
+			font-size: 14px
+			position: absolute
+			left: -18px
+			top: 4px
+.hospitals_content_filter_map
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	padding-bottom: 30px
+	padding-right: 30px
+.hospitals_content_filter_map_map
+	margin-right: -30px
+	margin-left: -30px
+	margin-bottom: 30px
+	@include trans
+	opacity: 1
+	visibility: visible
+	max-height: 1000px
+	&.close
+		max-height: 0
+		opacity: 0
+		visibility: hidden
+.hospitals_content_filter_city_title
+	.info
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		font-size: 14px
+		font-family: $co-reg
+		color: #5c6c7e
+		margin: 0
+		.icon
+			width: 45px
+			height: 45px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			justify-content: center
+			background-color: #f8f8f8
+			font-size: 18px
+			color: #bdc3c7
+			margin-right: 15px
+			border-radius: 50%
+.hospitals_content_filter_city_btn
+	.btn_show-map
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		cursor: pointer
+		outline: 0
+		background-color: transparent
+		border: none
+		font-size: 14px
+		font-family: $os
+		color: #5c6c7e
+		position: relative
+		padding-right: 15px
+		@include trans
+		&.closed
+			.arrow
+				transform: translateY(-50%)
+		.arrow
+			position: absolute
+			display: block
+			right: 0px
+			top: 50%
+			transform: translateY(-50%) rotate(180deg)
+			@include trans
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 8px 5.5px 0 5.5px;
+			border-color: #5c6c7e transparent transparent transparent;
+
+
+
+.hospitals_content_main
+	padding-top: 30px
+	background-color: #f8f8f8
+	margin-left: -30px
+	padding-right: 30px
+	padding-left: 30px
+	.position
+		background-color: $white
+		margin-bottom: 30px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: flex-start
+		padding: 15px
+		padding-right: 25px
+		&:last-child
+			margin-bottom: 0
+	.position_img
+		min-width: 310px
+		max-width: 310px
+		margin-right: 20px
+		position: relative
+		.arrows
+			height: 0
+			.slick-next
+				position: absolute
+				bottom: 0px
+				right: 0
+				background-color: transparent
+				outline: 0
+				height: 57px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				justify-content: center
+				color: #446d9b
+				font-size: 20px
+				border: none
+				background: rgba(255,255,255,0)
+				background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.59) 64%, rgba(255,255,255,0.78) 93%, rgba(246,246,246,0.82) 100%);
+				background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(64%, rgba(255,255,255,0.59)), color-stop(93%, rgba(255,255,255,0.78)), color-stop(100%, rgba(246,246,246,0.82)));
+				background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.59) 64%, rgba(255,255,255,0.78) 93%, rgba(246,246,246,0.82) 100%);
+				background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.59) 64%, rgba(255,255,255,0.78) 93%, rgba(246,246,246,0.82) 100%);
+				background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.59) 64%, rgba(255,255,255,0.78) 93%, rgba(246,246,246,0.82) 100%);
+				background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.59) 64%, rgba(255,255,255,0.78) 93%, rgba(246,246,246,0.82) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=1 );
+			.slick-prev
+				position: absolute
+				bottom: 0px
+				left: 0
+				background-color: transparent
+				outline: 0
+				height: 57px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				justify-content: center
+				color: #446d9b
+				font-size: 20px
+				border: none
+				background: rgba(237,237,237,0.82)
+				background: -moz-linear-gradient(left, rgba(237,237,237,0.82) 0%, rgba(246,246,246,0.82) 0%, rgba(255,255,255,0.78) 7%, rgba(255,255,255,0.59) 36%, rgba(255,255,255,0) 100%);
+				background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,237,237,0.82)), color-stop(0%, rgba(246,246,246,0.82)), color-stop(7%, rgba(255,255,255,0.78)), color-stop(36%, rgba(255,255,255,0.59)), color-stop(100%, rgba(255,255,255,0)));
+				background: -webkit-linear-gradient(left, rgba(237,237,237,0.82) 0%, rgba(246,246,246,0.82) 0%, rgba(255,255,255,0.78) 7%, rgba(255,255,255,0.59) 36%, rgba(255,255,255,0) 100%);
+				background: -o-linear-gradient(left, rgba(237,237,237,0.82) 0%, rgba(246,246,246,0.82) 0%, rgba(255,255,255,0.78) 7%, rgba(255,255,255,0.59) 36%, rgba(255,255,255,0) 100%);
+				background: -ms-linear-gradient(left, rgba(237,237,237,0.82) 0%, rgba(246,246,246,0.82) 0%, rgba(255,255,255,0.78) 7%, rgba(255,255,255,0.59) 36%, rgba(255,255,255,0) 100%);
+				background: linear-gradient(to right, rgba(237,237,237,0.82) 0%, rgba(246,246,246,0.82) 0%, rgba(255,255,255,0.78) 7%, rgba(255,255,255,0.59) 36%, rgba(255,255,255,0) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=1 );
+	.position_img-big
+		margin-bottom: 15px
+	.position_img-sm
+		.slick-slide
+			margin: 0 5px
+	.position_info_title
+		padding-bottom: 10px
+		border-bottom: 1px solid #f4f4f4
+		.title
+			margin: 0
+			.link
+				font-family: $co-bold
+				font-size: 23px
+				color: #3c6798
+				line-height: 1.4
+				outline: 0
+				border: none
+				white-space: normal
+				display: block
+				height: auto
+				padding: 0
+				@include trans
+	.position_info_reviews
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		margin-top: 10px
+		margin-bottom: 10px
+		.list
+			list-style-type: none
+			margin: 0
+			padding: 0
+			margin-right: 15px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: stretch
+			flex-direction: row-reverse
+			li
+				width: 20px
+				&:first-child
+					width: auto
+				a
+					display: block
+					img
+						max-width: 40px
+						min-width: 40px
+						border-radius: 50%
+						border: 3px solid $white
+		.info
+			margin: 0
+			margin-right: auto
+			max-width: 150px
+			font-family: $co-reg
+			font-size: 14px
+			color: #5c6c7e
+			line-height: 1.4
+		.rate
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			margin: 0
+			.stars
+				margin-right: 10px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				.star
+					margin-right: 3px
+					i
+						font-size: 18px
+						color: #d3d9dd
+					&.active
+						i
+							color: #f5dd3d
+			.link-rev
+				padding-top: 2px
+				color: #9d9d9d
+				font-family: $os
+				font-size: 14px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				.bold
+					padding-left: 4px
+					font-family: $co-reg
+					color: #3c6798
+					padding-top: 3px
+	.position_info_content
+		.list
+			list-style-type: none
+			margin: 0
+			padding: 0
+			margin-bottom: 10px
+			li
+				margin-bottom: 5px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				&:last-child
+					margin-bottom: 0
+				.icon	
+					width: 15px
+					margin-right: 7px
+					font-size: 17px
+					color: #cfcfcf
+				.info
+					margin-right: 5px
+					font-family: $os
+					color: #5c6c7e
+					font-size: 14px
+				a
+					font-family: $os
+					font-weight: 700
+					font-size: 14px
+					color: #5392d8
+					margin-right: 3px
+					&.web
+						color: #5c6c7e
+						border-bottom: 1px dashed #5c6c7e
+						text-decoration: none
+	.position_info_prices
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		padding-left: 20px
+		padding-bottom: 15px
+		align-items: stretch
+	.position_info_prices_pos
+		@include trans
+		margin-right: 10px
+		background-color: #f8f8f8
+		position: relative
+		border-radius: 5px
+		padding-top: 15px
+		padding-left: 10px
+		padding-bottom: 5px
+		width: 130px
+		min-width: 130px
+		&:last-child
+			margin-right: 0
+		.icon
+			position: absolute
+			font-size: 26px
+			top: 5px
+			right: 10px
+			&.rouble
+				color: #f44d69
+			&.pregnant
+				color: #a670b0
+			&.empl
+				color: #5392d8
+			&.reserv
+				color: #2ead73
+		.title
+			color: #5c6c7e
+			font-size: 14px
+			font-family: $os
+			margin-bottom: 5px
+		.price
+			font-family: $co-bold
+			font-size: 18px
+			color: #5c6c7e
+	.position_info_load
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.title
+			margin: 0
+			margin-right: 10px
+			color: #5c6c7e
+			font-size: 14px
+			font-family: $os
+		.scale
+			flex: auto
+			border: 1px solid #f3f3f3
+			height: 23px
+			border-radius: 30px
+			.width
+				width: auto
+				height: 100%
+				border-radius: 30px
+				display: block
+				&.blue
+					background-color: #5392d8
+					box-shadow: 0px 3px 5px 0px rgba(83, 146, 216, 0.5)
+				&.green
+					background-color: #2ead73
+					box-shadow: 0px 3px 5px 0px rgba(46, 173, 115, 0.5)
+				&.red
+					background-color: #f44d69
+					box-shadow: 0px 3px 5px 0px rgba(244, 77, 105, 0.5)
+.pagination-main
+	padding-top: 30px
+	padding-bottom: 30px
+	background-color: #f8f8f8
+.pagination-main_btn
+	text-align: center
+	margin-bottom: 15px
+	.btn
+		background-color: transparent
+		font-family: $co-reg
+		font-size: 15px
+		color: #3c6798
+		border: 1px solid #2ead73
+		@include trans
+		height: auto
+		padding-top: 17px
+		padding-bottom: 17px
+		line-height: 1
+.pagination-main_list
+	text-align: center
+	.list
+		list-style-type: none
+		margin: 0
+		padding: 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: center
+		li
+			margin: 0 5px
+			&.active
+				a
+					color: $white
+					background-color: #2ead73
+			a
+				line-height: 1
+				@include trans
+				width: 40px
+				height: 40px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 50%
+				background-color: transparent
+				font-family: $co-reg
+				font-size: 14px
+				color: #65607e
+				text-decoration: none
+				i
+					font-size: 18px
+					line-height: 40px
+
+.sidebar-main.hospital
+	padding-right: 0
+	.hosp_sidebar
+		margin-left: -20px
+		.item-box.find-box
+			background-color: #5392d8
+			padding-bottom: 70px
+		.item-box.pedia-box
+			padding-bottom: 70px
+			background-color: #fc665f
+
+.hosps_list
+	margin-top: 20px
+	margin-bottom: 20px
+	padding-left: 20px
+	padding-right: 20px
+.hosps_list_title
+	padding-bottom: 15px
+	.title
+		font-family: $co-bold
+		font-size: 21px
+		color: #65607e
+		margin: 0
+.hosps_list_main
+	.position
+		padding-bottom: 15px
+		border-bottom: 1px solid #ececec
+		margin-bottom: 20px
+	.position_loc
+		margin-top: 10px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		.icon
+			width: 20px
+			margin-right: 10px
+			color: #cfcfcf
+			font-size: 18px
+		.link
+			text-decoration: none
+			font-family: $os
+			font-size: 14px
+			color: #5c6c7e
+			border: none
+			@include trans
+	.position_info
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		.__img
+			min-width: 72px
+			max-width: 72px
+			min-height: 72px
+			max-height: 72px
+			margin-right: 15px
+			img
+				object-fit: cover
+				width: 100%
+				height: 100%
+		.__title
+			.title
+				margin: 0
+				margin-bottom: 0px
+				.link
+					margin: 0
+					font-size: 18px
+					font-family: $co-reg
+					color: #3c6798
+					@include trans
+					white-space: normal
+					height: auto
+					width: auto
+					border: none
+					background-color: transparent
+					display: block
+					padding: 0
+			.rate-rew
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				.stars
+					margin-right: 10px
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					align-items: center
+					.star
+						font-size: 14px
+						margin-right: 1px
+						color: #d3d9dd
+						&:last-child
+							margin-right: 0
+						&.active
+							color: #f5dd3d
+				.reviews
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					align-items: center
+					.link
+						font-size: 14px
+						font-family: $os
+						color: #9d9d9d
+						line-height: 1
+						padding-top: 3px
+						.bold
+							font-family: $co-reg
+							color: #3c6798
+							line-height: 1
