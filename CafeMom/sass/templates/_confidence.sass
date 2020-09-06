@@ -1,0 +1,143 @@
+.confidence-container
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+
+.confidence-title
+	width: 100%
+	@include title-container
+	.title
+		@include title
+.confidence-content
+	background-color: #f8f8f8
+	width: 75%
+	padding: 50px 40px
+.confidence-content_text
+	padding: 0 30px
+	margin-bottom: 30px
+	p
+		margin-bottom: 5px
+		font-family: $os
+		font-size: 15px
+		color: #5c6c7e
+		line-height: 1.6
+		margin-top: 0
+	h5
+		font-size: 20px
+		font-family: $os
+		color: #617a98
+		font-weight: 700
+		margin-top: 30px
+		margin-bottom: 30px
+	h6
+		color: #5c6c7e
+		font-size: 17px
+		font-family: $os
+		font-weight: 700
+		margin-top: 30px
+		margin-bottom: 10px
+	a
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		font-family: $os
+		color: #627abc
+		font-size: 15px
+		margin-bottom: 10px
+		&+p
+			margin-bottom: 30px
+		img
+			margin-right: 5px
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		li
+			padding-left: 20px
+			position: relative
+			margin-bottom: 5px
+			font-family: $os
+			font-size: 15px
+			color: #5c6c7e
+			line-height: 1.6
+			margin-top: 0
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				top: 9px
+				left: 0
+				width: 8px
+				height: 8px
+				background-color: #5682b3
+				border-radius: 50%
+
+.confidence-content_calendar
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	.col-big
+		min-width: 66.666666%
+		max-width: 66.666666%
+	.col-sml
+		min-width: 33.333333%
+		max-width: 33.333333%
+	.items
+		.encyclopedia
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				width: 70px
+				height: 70px
+				background: url(../img/svg/1.svg) 0 0 no-repeat
+				right: 29px
+				bottom: 28px
+		.lineers
+			background-color: #a670b0
+			&:after
+				content: '\e903'
+				font-size: 80px
+				color: $white
+				font-family: 'icomoon'
+				display: block
+				position: absolute
+				width: 90px
+				height: 70px
+				// background: url(../img/svg/1.svg) 0 0 no-repeat
+				right: 29px
+				bottom: 28px
+.sidebar-main.conf
+	.sidebar-main_encyclopedia
+		margin-left: -20px
+		margin-right: -20px
+		background-color: #24ae87
+		padding-top: 20px
+		padding-bottom: 0px
+		padding-left: 20px
+		padding-right: 20px
+	.sidebar-main_encyclopedia_title .title
+		color: $white
+	.sidebar-main_encyclopedia_list .position_title .link
+		color: #adfce6
+		border-color: #adfce6
+	.sidebar-main_encyclopedia_list .position_text .text
+		color: $white
+	.sidebar-main_encyclopedia_list .position_info .comment i,
+	.sidebar-main_encyclopedia_list .position_info .views i,
+	.sidebar-main_encyclopedia_list .position_info .fav i
+		color: #adfce6
+	.sidebar-main_encyclopedia_list .position_info .comment,
+	.sidebar-main_encyclopedia_list .position_info .views,
+	.sidebar-main_encyclopedia_list .position_info .fav
+		color: #adfce6
+	.sidebar-main_encyclopedia_list .position
+		border-color: #41b796

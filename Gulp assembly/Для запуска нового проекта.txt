@@ -1,0 +1,3 @@
+shift + mouse2
+консоль
+npm i

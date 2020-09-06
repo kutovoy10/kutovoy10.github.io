@@ -1,0 +1,106 @@
+.informers_container
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+.informers_title
+	width: 100%
+	@include title-container
+	.title
+		@include title
+.informers_content
+	width: 75%
+	background-color: #f8f8f8
+	padding: 45px 30px 50px
+.informers_content_head_info
+	margin-bottom: 30px
+	padding-left: 30px
+	padding-right: 30px
+	.text
+		margin: 0
+		font-family: $os
+		font-size: 15px
+		color: #5c6c7e
+.informers_content_head_list
+	align-items: stretch
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	margin-bottom: 30px
+	.position
+		position: relative
+		width: 48%
+		border-radius: 10px
+		height: 380px
+		img
+			border-radius: 10px
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.position_info
+		position: absolute
+		top: 65px
+		left: 50px
+		.title
+			margin-top: 0
+			margin-bottom: 5px
+			line-height: 1.6
+			font-family: $co-reg
+			font-size: 17px
+			color: #24ae87
+		.text
+			margin-top: 0
+			margin-bottom: 70px
+			font-family: $co-bold
+			font-size: 25px
+			color: #65607e
+		.download
+			display: inline-block
+			line-height: 1
+			padding: 15px 35px
+			color: $white
+			font-family: $co-reg
+			font-size: 15px
+			background-color: #24ae87
+			border-radius: 20px
+
+.informers_content_usage
+	padding: 35px 60px 50px 45px
+	background-color: #fbd53c
+.informers_content_usage_title
+	margin-bottom: 30px
+	.title
+		margin: 0
+		@include title
+.informers_content_usage_main
+	position: relative
+.informers_content_usage_main_preload
+	@include trans
+	cursor: pointer
+	img
+		cursor: pointer
+	&.close
+		opacity: 0
+		visibility: hidden
+		float: none
+.informers_content_usage_main_video
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	width: 100%
+	height: 100%
+	opacity: 0
+	visibility: hidden
+	&.open
+		visibility: visible
+		opacity: 1
+	iframe
+		width: 100%
+		height: 100%

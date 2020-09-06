@@ -1,0 +1,804 @@
+.drop-slider.videos_container
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+.videos_title
+	width: 100%
+	@include title-container
+	.title
+		@include title
+
+.videos_content
+	width: 75%
+	padding: 50px 30px 6px 30px
+	background-color: #f8f8f8
+	margin-bottom: 30px
+.videos_content_main
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	.position
+		width: 30%
+		max-width: 30%
+		position: relative
+		cursor: pointer
+		border-radius: 5px
+		margin-bottom: 20px
+	.position_img
+		border-radius: 5px
+		position: relative
+		height: 200px
+		width: 100%
+		overflow: hidden
+		&:before
+			content: ''
+			border-radius: 5px
+			display: block
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			z-index: 1
+			background-color: rgba(0,0,0,0.15)
+		>img
+			border-radius: 5px
+			width: 100%
+			height: 100%
+			object-fit: cover
+		.protect
+			position: absolute
+			left: 15px
+			top: 10px
+			z-index: 5
+			opacity: 0
+			visibility: hidden
+			@include trans
+		.scale
+			@include trans
+			z-index: 5
+			position: absolute
+			top: 10px
+			right: 10px
+			opacity: 0
+			visibility: hidden
+		.overlay
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			z-index: 4
+			background-color: rgb(36, 174, 135)
+			opacity: 0.922
+			border-radius: 5px
+			transform: translateY(-100%)
+			@include trans
+		.show-video
+			position: absolute
+			bottom: 10px
+			left: 10px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			justify-content: space-between
+			padding: 5px 10px
+			line-height: 1
+			color: $white
+			font-family: $co-reg
+			font-size: 12px
+			border: 1px solid $white
+			border-radius: 3px
+			z-index: 5
+			@include trans
+			opacity: 0
+			visibility: hidden
+			img
+				margin-right: 5px
+		.add-friend
+			position: absolute
+			bottom: 10px
+			right: 10px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			justify-content: space-between
+			padding: 5px 10px
+			line-height: 1
+			color: $white
+			font-family: $co-reg
+			font-size: 12px
+			border: 1px solid $white
+			border-radius: 3px
+			z-index: 5
+			@include trans
+			opacity: 0
+			visibility: hidden
+			img
+				margin-right: 5px
+		.play-btn
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 52px
+			height: 52px
+			cursor: pointer
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			justify-content: center
+			z-index: 6
+			@include trans
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				left: 0
+				bottom: 0
+				right: 0
+				background-color: #ff6354
+				border-radius: 50%
+				z-index: 6
+				@include trans
+				box-shadow: 0px 6px 13px 0px rgba(11, 64, 49, 0.33)
+			&:before
+				content: ''
+				border-radius: 50%
+				display: block
+				position: absolute
+				z-index: 6
+				width: 95px
+				height: 95px
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				z-index: 5
+				@include trans
+				background-color: rgba(255,255,255,0.5)
+			.arrow
+				position: relative
+				z-index: 7
+				width: 0
+				@include trans
+				height: 0
+				border-style: solid
+				border-width: 10px 0 10px 16px
+				border-color: transparent transparent transparent $white
+	.position_info
+		.__hoster
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			img
+				min-width: 40px
+				max-width: 40px
+				width: 40px
+				border-radius: 50%
+				margin-right: 10px
+				filter: grayscale(100%)
+				@include trans
+			.info
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: column
+				// filter: grayscale(100%)
+				@include trans
+				.title
+					margin-top: 0
+					margin-bottom: 0px
+					line-height: 1.6
+					font-size: 15px
+					font-family: $co-reg
+					color: #9b9b9b
+					@include trans
+				.city
+					color: #cacaca
+					font-size: 14px
+					font-family: $co-reg
+					@include trans
+
+		.__head
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			align-items: center
+			position: relative
+			margin-top: 15px
+			margin-bottom: 15px
+			.sub-title
+				font-family: $co-reg
+				font-size: 11px
+				color: #cacaca
+				@include trans
+			.title
+				font-size: 14px
+				font-family: $co-reg
+				color: #b2b2b2
+				position: absolute
+				top: 0
+				left: 45px
+				right: 0px
+				@include trans
+			.views
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				font-family: $co-reg
+				font-size: 14px
+				color: #cacaca
+				@include trans
+				i
+					margin-right: 4px
+					width: 15px
+					min-width: 13px
+			.title-full
+				position: absolute
+				top: -10px
+				left: -10px
+				z-index: 10
+				right: 0
+				color: #5c6c7e
+				@include trans
+				opacity: 0
+				visibility: hidden
+				padding: 10px
+				border-radius: 5px
+				background-color: $white
+				box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.03)
+
+.videos_content_adv
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: stretch
+	margin-right: -30px
+.videos_content_adv_col
+	flex: 1
+	.position
+		padding: 25px 10px 35px 30px
+		position: relative
+		height: 50%
+		&.purple
+			background-color: #a670b0
+		&.dark-blue
+			background-color: #627abc
+		&.green
+			background-color: #2ead73
+			.link
+				background-color: #627abc
+		&.pink
+			background-color: #f44d69
+		&.blue
+			background-color: #5392d8
+		&.blue-light
+			background-color: #e0f1f4
+			.title
+				color: #4f6c8d
+			.text
+				color: #5c6c7e
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 0
+				width: 100%
+				height: 160px
+				background-color: #d4e8ee
+			.link
+				position: relative
+				z-index: 10
+		&.full
+			height: 100%
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			img
+				position: static
+				margin-top: -10px
+			.link
+				// flex: auto
+				// width: auto
+				margin-left: auto
+				margin-right: auto
+		.title
+			color: $white
+			height: 55px
+			margin-bottom: 10px
+			display: block
+			margin-top: 0
+			font-family: $co-reg
+			font-size: 20px
+		.text
+			margin-top: 0
+			margin-bottom: 35px
+			color: $white
+			font-family: $os
+			font-size: 15px
+		.link
+			font-family: $co-reg
+			font-size: 15px
+			color: $white
+			padding: 18px 25px
+			border-radius: 25px
+			line-height: 1
+			display: inline-block
+			box-shadow: 0px 5px 10.34px 0.66px rgba(30, 112, 75, 0.24)
+			background-color: #24ae87
+			border: none
+			@include trans
+			margin-top: auto
+		img
+			position: absolute
+			right: 30px
+			bottom: 40px
+			z-index: 1
+
+
+
+
+
+
+
+
+
+
+.video-modal
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 1000
+	opacity: 0
+	@include trans
+	visibility: hidden
+	&.open
+		visibility: visible
+		opacity: 1
+	.modal_overlay
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 10
+		background-color: rgba(0,0,0,0.7)
+	.modal_container
+		z-index: 11
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background-color: $white
+		padding: 35px 60px
+		border-radius: 15px
+		width: 70vw
+	.modal_content
+		position: relative
+	.video-modal_close
+		position: absolute
+		top: 0
+		right: 0
+		.close_btn
+			position: relative
+			outline: 0
+			padding: 0
+			width: 25px
+			height: 25px
+			cursor: pointer
+			border: none
+			background-color: transparent
+			span
+				width: 15px
+				height: 3px
+				background-color: #4f6c8d
+				display: block
+				position: absolute
+				top: 50%
+				left: 50%
+				&:first-child
+					transform: translate(-50%, -50%) rotate(45deg)
+				&:last-child
+					transform: translate(-50%, -50%) rotate(-45deg)
+	.video-modal_title
+		margin-bottom: 20px
+		.title
+			margin: 0
+			font-family: $co-reg
+			font-size: 20px
+			color: #4f6c8d
+	.video-modal_content_video
+		iframe,
+		video
+			width: 100%
+			height: 50vh
+	.video-modal_content_describe
+		.__foot
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: flex-start
+			img
+				width: 40px
+				height: 40px
+				min-width: 40px
+				max-width: 40px
+				margin-right: 10px
+			.info
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: column
+				@include trans
+				.title
+					margin-top: 0
+					margin-bottom: 0px
+					line-height: 1.6
+					font-size: 15px
+					font-family: $co-reg
+					color: #3f3f3f
+					@include trans
+				.city
+					color: #9b9b9b
+					font-size: 14px
+					font-family: $co-reg
+					@include trans
+
+		.__head
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-top: 20px
+			margin-bottom: 20px
+			.title-sm
+				font-family: $co-reg
+				font-size: 14px
+				color: #5c6c7e
+				margin: 0
+			.list
+				list-style-type: none
+				margin: 0
+				padding: 0
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				li
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					align-items: center
+					font-family: $co-reg
+					font-size: 14px
+					color: #9d9d9d
+					margin-right: 10px
+					&:last-child
+						margin-right: 0
+					i
+						margin-right: 5px
+
+
+.video-add-modal
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 1000
+	opacity: 0
+	@include trans
+	visibility: hidden
+	&.open
+		visibility: visible
+		opacity: 1
+	.modal_overlay
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 10
+		background-color: rgba(0,0,0,0.7)
+	.modal_container
+		z-index: 11
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background-color: $white
+		padding: 35px 60px
+		border-radius: 15px
+		width: auto
+	.modal_content
+		position: relative
+	.video-add-modal_close
+		position: absolute
+		top: 0
+		right: 0
+		.close_btn
+			position: relative
+			outline: 0
+			padding: 0
+			width: 25px
+			height: 25px
+			cursor: pointer
+			border: none
+			background-color: transparent
+			span
+				width: 15px
+				height: 3px
+				background-color: #4f6c8d
+				display: block
+				position: absolute
+				top: 50%
+				left: 50%
+				&:first-child
+					transform: translate(-50%, -50%) rotate(45deg)
+				&:last-child
+					transform: translate(-50%, -50%) rotate(-45deg)
+	.video-add-modal_title
+		margin-bottom: 30px
+		.title
+			margin-bottom: 10px
+			line-height: 1.5
+			font-size: 25px
+			font-family: $co-bold
+			color: #4f6c8d
+			margin-top: 0
+		.sub-title
+			font-family: $co-reg
+			font-size: 15px
+			color: #4f6c8d
+			margin: 0
+	.video-add-modal_form
+		.input-container
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.sub-title
+				font-weight: normal
+				font-family: $co-reg
+				font-size: 13px
+				color: #5c6c7e
+				max-width: 70px
+				margin-right: 10px
+			.input-text
+				flex: 1
+				line-height: 1
+				padding: 14px 17px
+				background-color: transparent
+				color: #5c6c7e
+				font-family: $co-reg
+				font-size: 13px
+				border-radius: 10px
+				border: 1px solid #d4e7ea
+				outline: 0
+				@include trans
+				&:focus
+					border-color: #5c6c7e
+			.btn_submit
+				margin-left: 25px
+				color: $white
+				font-family: $co-reg
+				font-size: 15px
+				background-color: #2ead73
+				border-radius: 20px
+				cursor: pointer
+				border: none
+				padding: 18px 25px
+				line-height: 1
+				box-shadow: 0px 5px 10.34px 0.66px rgba(30, 112, 75, 0.24)
+
+		.files-container
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: stretch
+			padding-bottom: 60px
+			.position-add
+				width: 55px
+				height: 55px
+				background-color: #2ead73
+				margin-top: auto
+				margin-bottom: auto
+				border-radius: 20px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				justify-content: center
+				color: $white
+				@include trans
+				&.hide
+					opacity: 0
+					visibility: hidden
+				.add-position
+					background-color: transparent
+					color: $white
+					font-size: 30px
+					width: 100%
+					height: 100%
+					border: none
+					outline: 0
+					padding: 0
+			.position
+				margin-right: 15px
+				position: relative
+				height: 100px
+				width: 135px
+				background-color: #e0f1f4
+				border-radius: 10px
+				&:last-child
+					margin-right: 0
+				&.added
+					.remove-btn
+						display: block
+					.title
+						color: #4f6c8d
+					img
+						display: block
+					.play-button
+						&:before
+							display: block
+						&:after
+							background-color: #ff6354
+						.arrow
+							border-color: transparent transparent transparent $white
+				.remove-btn
+					position: absolute
+					top: 8px
+					right: 8px
+					width: 20px
+					height: 20px
+					cursor: pointer
+					background-color: #f44d69
+					border-radius: 50%
+					color: $white
+					padding: 0
+					outline: 0
+					border: none
+					cursor: pointer
+					z-index: 11
+					display: none
+					span
+						position: absolute
+						top: 50%
+						left: 50%
+						width: 10px
+						height: 2px
+						background-color: $white
+						&:first-child
+							transform: translate(-50%, -50%) rotate(45deg)
+						&:last-child
+							transform: translate(-50%, -50%) rotate(-45deg)
+				.title
+					position: absolute
+					left: 0
+					top: calc(100% + 10px)
+					margin: 0
+					font-family: $co-reg
+					font-size: 13px
+					color: #9d9d9d
+				img
+					display: none
+					width: 100%
+					height: 100%
+					object-fit: cover
+					border-radius: 10px
+				.input-file
+					opacity: 0
+					cursor: pointer
+					margin: 0
+					padding: 0
+					width: 100%
+					height: 100%
+					z-index: 10
+					position: absolute
+					top: 0
+					bottom: 0
+					left: 0
+				.play-button
+					width: 30px
+					height: 30px
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					border-radius: 50%
+					background-color: #c2d8dc
+					z-index: 5
+					.arrow
+						display: block
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						width: 0
+						height: 0
+						z-index: 6
+						border-style: solid
+						border-width: 5.5px 0 5.5px 10px
+						border-color: transparent transparent transparent #e0f1f4
+					&:after
+						content: ''
+						display: block
+						position: absolute
+						top: 0
+						bottom: 0
+						left: 0
+						right: 0
+						background-color: #c2d8dc
+						z-index: 5
+						width: 100%
+						height: 100%
+						border-radius: 50%
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						top: 50%
+						left: 50%
+						width: 52px
+						height: 52px
+						background-color: rgba(255,255,255,0.25)
+						border-radius: 50%
+						transform: translate(-50%, -50%)
+						z-index: 4
+						display: none

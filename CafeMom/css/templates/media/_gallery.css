@@ -1,0 +1,7 @@
+@media all and (max-width: 1919px) {
+  .block-gallery .gallery {
+    width: 100px; }
+    .block-gallery .gallery-slaider {
+      margin: 0 1.7%; }
+    .block-gallery .gallery__content {
+      background: #000000; } }
