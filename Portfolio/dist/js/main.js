@@ -29,7 +29,7 @@ let tab = function () {
 
 tab();
 
-// 
+// modal in portfolio
 
 let modal = function () {
   let btnPortfolio = document.querySelectorAll('.btn-multipage'),
@@ -57,5 +57,35 @@ let modal = function () {
 }
 
 modal();
+
+// slide sections
+
+let pageSlide = function () {
+  let nav = document.querySelectorAll('.menu__list-item'),
+    section = document.querySelectorAll('.section'),
+    navName;
+
+  nav.forEach(item => {
+    item.addEventListener('click', selectSection);
+  })
+
+  function selectSection() {
+    nav.forEach(item => {
+      item.classList.remove('menu__list-item_active');
+    });
+    this.classList.add('menu__list-item_active');
+
+    navName = this.getAttribute('data-nav-name');
+    selectTabContent(navName);
+  }
+
+  function selectTabContent(navName) {
+    section.forEach(item => {
+      item.classList.contains(navName) ? item.classList.add('is-active') : item.classList.remove('is-active');
+    })
+  }
+};
+
+pageSlide();
 
 // });
