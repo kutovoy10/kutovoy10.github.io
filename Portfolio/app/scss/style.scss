@@ -276,6 +276,10 @@ body {
 
       .skill {
         margin-right: 50px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
       }
     }
 
@@ -301,7 +305,7 @@ body {
   .portfolio {
     .container {
       background: #ffffff;
-      padding: 50px 70px 50px 40px;
+      padding: 50px 0px 50px 0px;
       box-sizing: border-box;
       position: relative;
     }
@@ -337,11 +341,21 @@ body {
         }
       }
 
+      &__content {
+        position: relative;
+      }
+
       .tab {
-        display: none;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 1s;
+        transform: scale(0) skew(90deg, 0deg);
 
         &.is-active {
-          display: block;
+          transition: all 1s;
+          transform: scale(1) skew(0deg, 0deg);
         }
       }
     }
@@ -349,6 +363,8 @@ body {
     &__blocks {
       display: flex;
       flex-wrap: wrap;
+      padding: 0 40px 0 70px;
+      background: #ffffff;
     }
 
     &__block {
@@ -361,6 +377,7 @@ body {
       position: relative;
       transition: all 0.4s;
       margin-right: 4%;
+      position: relative;
 
       &:hover .portfolio__info::after,
       &:hover .portfolio__info::before {
@@ -392,6 +409,10 @@ body {
       width: 100%;
       height: auto;
       transition: all 0.4s;
+    }
+
+    &__title {
+      margin-left: -12px;
     }
 
     &__info {
@@ -453,33 +474,36 @@ body {
     }
 
     .modal-list-page {
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
       box-sizing: border-box;
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
       z-index: 100;
       transition: all .4s;
       transform: scale(1, 0);
 
-      .overflow {
-        width: 100%;
-        height: 100%;
+      /* .overflow {
+        width: 100vw;
+        height: calc(100vh + 254px);
         background: rgba(0, 0, 0, 0.8);
         z-index: 111;
-      }
+        position: absolute;
+        top: -249px;
+        left: -440px;
+      } */
 
       &__block {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         background: #ffffff;
-        border-radius: 10px;
-        padding: 40px 30px 30px 30px;
-        max-width: 95%;
-        max-height: 95%;
+        padding: 20px 30px 20px 30px;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          width: 0;
+        }
       }
 
       .close {
