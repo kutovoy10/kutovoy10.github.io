@@ -21,19 +21,99 @@
 
 }
 
-;
-
 // ========== >= 1200px ==========
-@media screen and (max-width:1200px) {}
+@media screen and (max-width:1200px) {
 
-;
+  /* global */
 
-// ========== >= 992px ==========
-@media screen and (max-width:992px) {}
+  h5.title {
+    line-height: 20px;
+  }
 
-;
+  /* --global-- */
+
+  /* main */
+
+  .main {
+
+    /* home */
+    .home {
+      &__title {
+        font-size: 50px;
+      }
+    }
+
+    /* --home-- */
+
+    /* about-me */
+    .about-me {
+      .container {
+        padding-right: 40px;
+      }
+
+      &__profile-text {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .cv__content {
+        width: 45%;
+
+        &+.cv__content {
+          margin-left: 10%;
+        }
+      }
+
+      .skills__block {
+        line-height: 16px;
+      }
+    }
+
+    /* --about-me-- */
+
+
+    /* portfolio */
+    .portfolio {
+      &__block {
+        width: 45%;
+        margin-right: 10%;
+
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+
+        &:nth-child(2n+1) {
+          margin-right: 10%;
+        }
+      }
+
+      .tabs-nav {
+        padding: 0 40px 0 70px;
+
+        &__item {
+          padding: 10px;
+
+          &+.tabs-nav__item {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    /* --portfolio-- */
+
+  }
+
+  /* --main-- */
+
+}
+
+// ========== >= 1024px ==========
+@media screen and (max-width:1024px) {}
 
 // ========== >= 768px ==========
 @media screen and (max-width:768px) {}
-
-;
