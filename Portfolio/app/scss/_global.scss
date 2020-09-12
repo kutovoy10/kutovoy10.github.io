@@ -89,3 +89,19 @@ h5.title {
         transition: all 2s;
     }
 }
+
+h1::selection,
+h2::selection,
+h4::selection,
+h5::selection,
+div::selection,
+p::selection,
+li::selection {
+    color: #ffffff;
+    background: #87d818;
+}
+
+h3::selection {
+    color: #ffffff;
+    background: rgb(34, 34, 34);
+}

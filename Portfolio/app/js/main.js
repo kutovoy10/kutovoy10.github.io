@@ -1,7 +1,7 @@
 // $(function () {
 
 // tab
-let tab = function () {
+const tab = function () {
   let tabNav = document.querySelectorAll('.tabs-nav__item'),
     tabContent = document.querySelectorAll('.tab'),
     tabName;
@@ -31,7 +31,7 @@ tab();
 
 // modal in portfolio
 
-let modal = function () {
+const modal = function () {
   let btnPortfolio = document.querySelectorAll('.btn-multipage'),
     closeBtnPortfolio = document.querySelectorAll('.close'),
     overflowPortfolio = document.querySelectorAll('.overflow');
@@ -60,7 +60,7 @@ modal();
 
 // slide sections
 
-let pageSlide = function () {
+const pageSlide = function () {
   let nav = document.querySelectorAll('.menu__list-item'),
     section = document.querySelectorAll('.section'),
     navName;
@@ -87,5 +87,32 @@ let pageSlide = function () {
 };
 
 pageSlide();
+
+// burger-menu
+
+const burgerMenu = function () {
+  let mediaBtn = document.querySelector('.media-header__btn'),
+    mediaHeaderActive = document.querySelector('header');
+
+  mediaBtn.addEventListener('click', () => {
+    mediaBtn.classList.toggle('media-header__btn_active');
+    mediaHeaderActive.classList.toggle('media-header_active');
+  })
+
+  if (window.innerWidth < 1024) {
+    let navItemClick = document.querySelectorAll('.menu__list-item');
+
+    for (let elem of navItemClick) {
+      elem.addEventListener('click', navHover);
+
+      function navHover() {
+        mediaBtn.classList.toggle('media-header__btn_active');
+        mediaHeaderActive.classList.toggle('media-header_active');
+      }
+    }
+  }
+};
+
+burgerMenu();
 
 // });
