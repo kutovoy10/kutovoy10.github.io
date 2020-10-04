@@ -566,5 +566,193 @@
 
 /* PRINT */
 @media print {
-  
+
+  *,
+  *:before,
+  *:after {
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .section {
+    width: 100%;
+    height: auto;
+    position: unset;
+    margin-left: 0;
+
+    .container {
+      min-height: unset;
+    }
+  }
+
+  h3.title {
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+
+  /* header */
+  .header {
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    background: #ffffff;
+    position: unset;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__for-print {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    &__info-text-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 40px;
+    }
+
+    &__developer {
+      margin-bottom: 0px !important;
+      font-size: 20px;
+    }
+
+    &__name {
+      font-size: 26px;
+    }
+
+    &_photo {
+      padding: 0;
+    }
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 0 !important;
+
+      &__link {
+        height: unset;
+        width: unset;
+        line-height: 26px;
+        font-size: 14px;
+      }
+
+      i {
+        display: none;
+      }
+
+      .social__cv,
+      .print {
+        display: none;
+      }
+
+      .social__whatsapp::after {
+        content: 'WhatsApp:  +380 50 237 7494';
+      }
+
+      .social__telegramm::after {
+        content: 'Telegramm:  @kutovoy_10';
+      }
+
+      .social__google-plus::after {
+        content: 'Gmail:  danil7kutovoy@gmail.com';
+      }
+
+      .social__github::after {
+        content: 'GitHub:  github.com/kutovoy10';
+      }
+    }
+  }
+
+  /* --header-- */
+
+  /* main */
+  .main {
+
+    /* home */
+    .home {
+      width: 100%;
+
+      .container {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right: 40px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+
+      &::before {
+        position: unset;
+        background: unset;
+      }
+
+      &__title {
+        display: none;
+      }
+
+      .info {
+        margin: 0 !important;
+
+        &__block {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    /* --home-- */
+
+    /* .about-me */
+    .about-me {
+
+      .container {
+        padding-top: 10px;
+      }
+
+      .cv__year {
+        font-weight: 700;
+        padding-left: 0;
+        padding-right: 0;
+        border-bottom: 2px solid #000;
+      }
+
+      .cv__link-print {
+        display: block;
+      }
+
+      .cv__link {
+        text-decoration: none;
+      }
+
+      .text {
+        line-height: 18px;
+      }
+    }
+
+    /* --.about-me-- */
+
+    /* portfolio */
+    .portfolio {
+      display: none;
+    }
+
+    /* --portfolio-- */
+  }
+
+  /* --main-- */
+
 }

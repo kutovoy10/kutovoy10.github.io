@@ -115,4 +115,16 @@ const burgerMenu = function () {
 
 burgerMenu();
 
+// print 
+const print = function () {
+    let printBtn = document.querySelector('.action-print');
+
+    printBtn.addEventListener('click', () => {
+        window.print();
+        return false;
+    });
+}
+
+print();
+
 // });

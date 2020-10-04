@@ -274,6 +274,10 @@ body {
         &:hover {
           color: #87d818;
         }
+
+        &-print {
+          display: none;
+        }
       }
     }
 
@@ -324,8 +328,6 @@ body {
   /* portfolio */
 
   .portfolio {
-    z-index: 11111;
-
     .container {
       background: #ffffff;
       padding: 50px 0px 50px 0px;
@@ -529,16 +531,6 @@ body {
       z-index: 100;
       transition: all .4s;
       transform: scale(1, 0);
-
-      /* .overflow {
-        width: 100vw;
-        height: calc(100vh + 254px);
-        background: rgba(0, 0, 0, 0.8);
-        z-index: 111;
-        position: absolute;
-        top: -249px;
-        left: -440px;
-      } */
 
       &__block {
         background: #ffffff;
