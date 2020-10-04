@@ -324,6 +324,8 @@ body {
   /* portfolio */
 
   .portfolio {
+    z-index: 11111;
+
     .container {
       background: #ffffff;
       padding: 50px 0px 50px 0px;
@@ -402,7 +404,6 @@ body {
 
       &:hover .portfolio__info::after,
       &:hover .portfolio__info::before {
-        opacity: 1;
         transform: scale(1);
       }
 
