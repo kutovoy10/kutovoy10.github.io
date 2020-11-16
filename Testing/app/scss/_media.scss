@@ -1,0 +1,653 @@
+// ========== >= 1920px ==========
+@media screen and (max-width:1920px) {
+  .header .container {
+    width: 1550px;
+  }
+}
+
+// ========== >= 1600px ==========
+@media screen and (max-width:1600px) {
+  .header {
+    .container {
+      width: 1200px;
+    }
+  }
+
+  .section {
+    .container {
+      width: 1200px;
+    }
+  }
+
+  .make {
+    &__top {
+      justify-content: flex-end;
+    }
+
+    &__title {
+      display: none;
+    }
+  }
+}
+
+// ========== >= 1366px ==========
+@media screen and (max-width:1366px) {
+  .discover {
+    &__demo {
+      width: 600px;
+      height: 500px;
+    }
+
+    &__description {
+      margin-top: 50px;
+    }
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 26px;
+      width: 350px;
+    }
+
+    .bg-burger {
+      width: 600px;
+      height: 500px;
+    }
+
+    .bun-up {
+      width: 300px;
+      top: 0;
+    }
+
+    .cucumber {
+      top: 105px;
+      width: 300px;
+    }
+
+    .cutlet {
+      top: 130px;
+      width: 300px;
+    }
+
+    .cheese {
+      top: 176px;
+      width: 300px;
+      left: 0;
+    }
+
+    .salad {
+      top: 170px;
+      width: 300px;
+      left: -10px;
+    }
+
+    .sauce {
+      top: 207px;
+      width: 300px;
+      left: -5px
+    }
+
+    .bun-down {
+      top: 218px;
+      width: 300px;
+      left: 19px;
+    }
+
+    .btn-make-burger a {
+      top: 120px;
+      left: -100px;
+    }
+  }
+}
+
+// ========== >= 1250px ==========
+@media screen and (max-width:1250px) {
+  .header {
+    .container {
+      width: 95%;
+    }
+  }
+
+  .section {
+    .container {
+      width: 95%;
+    }
+  }
+
+  .discover {
+    .bg-burger {
+      width: 500px;
+      height: 500px;
+    }
+
+    &__demo {
+      width: 500px;
+    }
+  }
+
+  .orderPopUp {
+    width: 100%;
+
+    .wrapper {
+      width: 90%;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+  }
+}
+
+// ========== >= 1024 ==========
+@media screen and (max-width:1024px) {
+  .header {
+    background: #ffffff;
+  }
+
+  .discover {
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+    }
+
+    &__subtitle {
+      width: 100%;
+    }
+
+    &__description {
+      margin-bottom: 75px;
+    }
+
+    &__demo {
+      margin-left: 150px;
+    }
+
+    .btn-make-burger a {
+      left: -130px;
+    }
+  }
+
+  .make {
+    &__burger {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    &__info {
+      width: 100%;
+    }
+
+    &__info-title {
+      display: none;
+    }
+
+    &__summary {
+      width: 500px;
+      justify-content: center;
+      margin: 20px auto 0 auto;
+
+      &-item {
+        margin-bottom: 30px;
+        width: 33%;
+      }
+    }
+
+    .price {
+      position: absolute;
+      top: 270px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__price {
+      margin-left: 0;
+      justify-content: center;
+    }
+
+    &__offer {
+      margin: 0;
+      color: #ff4d4f;
+      padding: 12px 0;
+      width: 100%;
+      background: #ffeded;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .order__ingredients {
+      width: 100%;
+      overflow-x: scroll;
+      justify-content: unset;
+
+      &-product {
+        margin-right: 15px;
+      }
+    }
+
+    .bonus {
+      align-items: center;
+      justify-content: center;
+      background: #FFEDED;
+      border-radius: 20px;
+      padding: 12px 0;
+      text-align: center;
+      width: 100%;
+      margin-left: 0;
+
+      &__img {
+        display: none;
+      }
+
+      &__title {
+        margin-bottom: 0;
+        margin-right: 15px;
+      }
+
+      &__name {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        font-size: 26px;
+
+        span {
+          background: #FF4D4F;
+          border-radius: 19px;
+          padding: 6px 7px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .orderPopUp {
+    position: fixed;
+
+    .wrapper {
+      height: auto;
+      padding: 150px 0;
+    }
+
+    &__text {
+      font-size: 56px;
+      line-height: 60px;
+      padding: 0 50px;
+    }
+  }
+}
+
+// ========== >= 768px ==========
+@media screen and (max-width:768px) {
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .section .container {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .header-media {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11111;
+
+    .container {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .menu-fixed {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 24px;
+      background: #ffffff;
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      background: #f0f7fa;
+      border-radius: 99px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-media-nav {
+      .close {
+        display: none;
+      }
+    }
+
+    .menu-block {
+      width: 100%;
+      height: calc(100vh - 124px);
+      margin-top: -1366px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background: #ffffff;
+      padding: 0 24px;
+      transition: all .8s ease;
+
+      &__info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .btn-call {
+          background: #ffeded;
+          border-radius: 20px;
+          display: block;
+          font-size: 16px;
+          line-height: 19px;
+          color: #ff4d4f;
+          padding: 8px 24px;
+          font-weight: 500;
+        }
+
+        .number a {
+          font-size: 16px;
+          line-height: 19px;
+          font-weight: 500;
+          color: #1f2939;
+        }
+      }
+
+      &__nav {
+        ul {
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          li {
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+              font-weight: 500;
+              border-color: #5243c2;
+            }
+
+            &:first-child {
+              margin-bottom: 30px;
+            }
+
+            a {
+              display: block;
+              color: #1f2030;
+              font-size: 16px;
+              line-height: 22px;
+              margin-bottom: 11px;
+            }
+          }
+        }
+      }
+
+      &__account {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .logo {
+          width: 60px;
+          height: 60px;
+          border-radius: 99px;
+          background: #f0f7fa;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            display: block;
+          }
+        }
+
+        .name {
+          font-size: 16px;
+          line-height: 19px;
+          color: #1F2939;
+          margin-top: 12px;
+          margin-bottom: 32px;
+        }
+      }
+    }
+
+  }
+
+  .orderPopUp {
+
+    .wrapper {
+      height: auto;
+      padding: 100px 0;
+    }
+
+    &__text {
+      font-size: 40px;
+      line-height: 40px;
+      padding: 0 50px;
+    }
+
+    .close {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+// ========== >= 650px ==========
+@media screen and (max-width:650px) {
+  .discover {
+    &__title {
+      font-size: 48px;
+      line-height: 58px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 32px;
+      text-align: justify;
+    }
+
+    &__demo {
+      width: calc(100vw - 48px);
+      margin-left: 0;
+    }
+
+    .bg-burger {
+      width: calc(100vw - 48px);
+      position: unset;
+      top: unset;
+      left: unset;
+      margin-top: -50px;
+    }
+
+    .bun-up,
+    .sauce,
+    .cheese,
+    .cucumber,
+    .cutlet,
+    .bun-down,
+    .salad {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .make {
+    &__burger {
+      .sure {
+        top: 150px;
+        left: 375px;
+      }
+    }
+
+    &__burger-img {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 450px;
+      height: 450px;
+    }
+
+    &__burger-block>img {
+      width: 300px;
+    }
+  }
+}
+
+// ========== >= 500px ==========
+@media screen and (max-width:500px) {
+  .make {
+    &__summary {
+      width: 100%;
+
+      &-item {
+        margin-right: 5px;
+        padding: 12px 10px;
+        font-size: 14px;
+        margin-bottom: 10px;
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    &__burger-img {
+      margin-top: 20px;
+    }
+
+    &__burger .sure {
+      left: 175px;
+    }
+
+    &__offer {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .bonus {
+      margin-top: 0;
+
+      &__title,
+      &__name {
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      &__name span {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  .orderPopUp {
+    .wrapper {
+      height: auto;
+      padding: 50px 0;
+    }
+
+    &__text {
+      font-size: 30px;
+      line-height: 32px;
+      padding: 20px 20px 0 20px;
+      margin-bottom: 30px;
+    }
+
+    .close {
+      top: 15px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+// ========== >= 475px ==========
+@media screen and (max-width:475px) {
+  .discover {
+    .bg-burger {
+      margin-top: -100px;
+    }
+  }
+
+  .make {
+    margin-bottom: 40px;
+  }
+
+  .orderPopUp {
+    .wrapper {
+      height: auto;
+      padding: 50px 0;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    form button {
+      font-size: 28px;
+    }
+  }
+}
+
+// ========== >= 425px ==========
+@media screen and (max-width:425px) {
+  .discover {
+    overflow: hidden;
+
+    .bg-burger {
+      width: 160%;
+      margin-left: -30%;
+      margin-top: -50px;
+    }
+  }
+
+  .make {
+    &__burger .sure {
+      left: 120px;
+    }
+  }
+
+  .orderPopUp {
+    form {
+      flex-direction: column;
+
+      input {
+        width: 90%;
+        font-size: 24px;
+        line-height: 28px;
+        margin-right: 0;
+      }
+
+      button {
+        width: 90%;
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

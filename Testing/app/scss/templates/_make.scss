@@ -1,0 +1,357 @@
+.make {
+  overflow: hidden;
+
+  .container {
+    width: 1550px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  &__top {
+    display: flex;
+  }
+
+  &__title {
+    font-size: 72px;
+    line-height: 80px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-right: 60px;
+    margin-top: 100px;
+  }
+
+  .bun-down {
+    img {
+      display: block;
+      width: 420px;
+    }
+  }
+
+  &__burger {
+    display: flex;
+    position: relative;
+
+    &-img {
+      background: url(../img/burger-img.svg);
+      width: 598px;
+      height: 595px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sure {
+      position: absolute;
+      width: 216px;
+      height: 53px;
+      top: 50px;
+      left: 400px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: #FFFFFF;
+      border-radius: 99px;
+      font-size: 18px;
+      line-height: 22px;
+      color: #1f2939;
+      box-shadow: 0 0 20px -14px black;
+      z-index: 1111;
+
+      &:before {
+        content: "";
+        border: solid transparent;
+        position: absolute;
+        left: 34px;
+        bottom: 100%;
+        border-bottom-color: #fff;
+        border-width: 9px;
+        margin-left: 0;
+      }
+
+      img {
+        display: block;
+        margin-right: 8px;
+      }
+    }
+
+    .sure-active {
+      display: flex !important;
+    }
+  }
+
+  &__info {
+    z-index: 1111;
+  }
+
+  &__info-title {
+    font-size: 36px;
+    line-height: 43px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #1F2939;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 16px;
+      box-sizing: border-box;
+      background: #F5F5FF;
+      border-radius: 50px;
+      margin-right: 12px;
+      margin-bottom: 55px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      span {
+        display: block;
+        margin-left: 8px;
+      }
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: flex-start;
+    margin-left: -160px;
+  }
+
+  .price {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 99px;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    background: #5243C2;
+    z-index: 1111;
+  }
+
+  &__offer {
+    font-size: 24px;
+    line-height: 29px;
+    color: #1F2939;
+    margin-left: 25px;
+    margin-top: 15px;
+
+    span {
+      color: #ff4d4f;
+      font-weight: 700;
+    }
+  }
+
+  .bonus {
+    position: relative;
+    margin-left: 25px;
+    margin-top: 7px;
+
+    &__title {
+      font-size: 36px;
+      color: #ff4d4f;
+      line-height: 43px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    &__name {
+      font-size: 24px;
+      line-height: 29px;
+      color: #1F2939;
+      display: flex;
+      margin-top: 7px;
+      margin-left: 10px;
+
+      span {
+        display: block;
+        font-size: 24px;
+        line-height: 29px;
+        color: #949BA6;
+        margin-left: 12px;
+      }
+    }
+
+    &__img img {
+      display: block;
+      position: absolute;
+      bottom: -125px;
+      right: -90px;
+    }
+  }
+
+
+  // order
+
+  &__order {
+    width: 100%;
+  }
+
+  .order-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  button.order__btn {
+    padding: 12px 24px;
+    background: #F5F5FF;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 99px;
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .order {
+    display: inline-block;
+
+    &__quantity {
+      font-size: 14px;
+      line-height: 17px;
+      color: #1f2939;
+      margin: 0 14px;
+    }
+
+    &__ingredients {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__product {
+      background: #FFFFFF;
+      border: 1px solid #F0F7FA;
+      box-sizing: border-box;
+      border-radius: 20px;
+      padding: 24px 18px;
+      position: relative;
+
+      &-img {
+        display: flex;
+        align-items: center;
+        min-height: 80px;
+
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      &:hover .hover-block {
+        display: block;
+      }
+
+      .hover-block {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #ffffff;
+      }
+
+      &-name {
+        font-size: 14px;
+        line-height: 17px;
+        color: #1f2939;
+        margin-bottom: 15px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      &-quantity {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .active {
+          display: flex !important;
+        }
+
+        & .hide {
+          display: none !important;
+        }
+      }
+
+      button.no-active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background: #F5F5FF;
+        border-radius: 99px;
+        color: #949ba6;
+        border: none;
+        font-size: 30px;
+        outline: none;
+        opacity: .4;
+        cursor: pointer;
+        background-image: url(../img/minus.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      button.minus {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background: #F5F5FF;
+        border-radius: 99px;
+        color: #949ba6;
+        border: none;
+        font-size: 30px;
+        outline: none;
+        cursor: pointer;
+        background-image: url(../img/minus.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      button.plus {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background: #F5F5FF;
+        border-radius: 99px;
+        color: #949ba6;
+        border: none;
+        font-size: 30px;
+        outline: none;
+        cursor: pointer;
+        background-image: url(../img/plus.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}
+
+.el {
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 50px;
+}
