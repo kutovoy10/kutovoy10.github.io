@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <div id="fullpage">
+
+    <!-- discover -->
+    <div class="section active discover" id="firstPage">
+      <div class="container">
+
+        <div class="discover__description">
+          <div class="discover__title">Make<br />Your Burger</div>
+          <div class="discover__subtitle">
+            Parallax screen. Burger ingredients and emojis moving depending on the position of the
+            mouse pointer.
+          </div>
+        </div>
+
+        <div class="discover__demo">
+          <div class="container-parallax">
+            <img src="./img/burger-components/bun-up.png" alt="bun-up" class="parallax-item bun-up" data-speed="40">
+            <img src="./img/burger-components/sauce.png" alt="sauce" class="parallax-item sauce" data-speed="80">
+            <img src="./img/burger-components/cheese.png" alt="cheese" class="parallax-item cheese" data-speed="40">
+            <img src="./img/burger-components/salad.png" alt="salad" class="parallax-item salad" data-speed="80">
+            <img src="./img/burger-components/cutlet.png" alt="cutlet" class="parallax-item cutlet" data-speed="40">
+            <img src="./img/burger-components/cucumber.png" alt="cucumber" class="parallax-item cucumber"
+              data-speed="80">
+            <img src="./img/burger-components/bun-down.png" alt="bun-down" class="parallax-item bun-down"
+              data-speed="40">
+            <img src="./img/bg-burger.svg" alt="bg-burger" class="bg-burger">
+
+            <div class="btn-make-burger"><a href="#lastPage">make burger</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- make -->
+    <div class="section make" id="secondPage">
+      <div class="container">
+
+        <div class="make__top">
+          <div class="make__title">Make<br />Your Burger</div>
+
+          <div class="make__burger">
+            <div class="make__burger-img">
+              <div class="make__burger-block">
+                <img src="./img/burger-components/bun-down.png" alt="bun-down">
+                <div class="sure">
+                  <img src="./img/smile-bomb.png" alt="smile-bomb">
+                  Are you sure?
+                </div>
+              </div>
+            </div>
+
+            <div class="make__info">
+              <div class="make__info-title">Summary</div>
+              <div class="make__summary">
+                <div class="make__summary-item kcal">
+                  <img src="./img/calories.png" alt="calories">
+                  <span>50 kcal</span>
+                </div>
+                <div class="make__summary-item time">
+                  <img src="./img/time.png" alt="time">
+                  <span>0 min</span>
+                </div>
+                <div class="make__summary-item weight">
+                  <img src="./img/weight.png" alt="weight">
+                  <span>20 g</span>
+                </div>
+              </div>
+              <div class="make__price">
+                <div class="price">$0.00</div>
+                <div class="make__offer">Build a <span>$5</span> Burger and Get a Gift</div>
+                <div class="bonus" style="display: none;">
+                  <div class="bonus__title">+ Gift</div>
+                  <div class="bonus__name">Tomato Ketchup<span>0.2 oz</span></div>
+                  <div class="bonus__img">
+                    <img src="./img/ketchyp.png" alt="ketchyp">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="make__order order">
+          <div class="order-btn">
+            <button class="order__btn">Order</button>
+          </div>
+
+          <div class="order__ingredients">
+            <div class="order__ingredients-product order__product">
+              <div class="order__product-img">
+                <img src="./img/order-ingredients/Cutlet.png" alt="Cutlet">
+              </div>
+              <div class="order__product-name">Cutlet</div>
+              <div class="order__product-quantity">
+                <button class="no-active" data-id="cutlet"></button>
+                <button class="minus cutlet" data-id="cutlet"></button>
+                <div class="order__quantity">0</div>
+                <button class="plus cutlet" data-id="cutlet"></button>
+              </div>
+            </div>
+
+            <div class="order__ingredients-product order__product">
+              <div class="order__product-img">
+                <img src="./img/order-ingredients/Mayo.png" alt="sauce">
+              </div>
+              <div class="order__product-name">Mayo</div>
+              <div class="order__product-quantity">
+                <button class="no-active"></button>
+                <button class="minus sause" data-id="sause"></button>
+                <div class="order__quantity">0</div>
+                <button class="plus sause" data-id="sause"></button>
+              </div>
+            </div>
+
+            <div class="order__ingredients-product order__product">
+              <div class="order__product-img">
+                <img src="./img/order-ingredients/onion.png" alt="onion">
+              </div>
+              <div class="order__product-name">Onion</div>
+              <div class="order__product-quantity">
+                <button class="no-active"></button>
+                <button class="minus onion" data-id="onion"></button>
+                <div class="order__quantity">0</div>
+                <button class="plus onion" data-id="onion"></button>
+              </div>
+            </div>
+
+            <div class="order__ingredients-product order__product">
+              <div class="order__product-img">
+                <img src="./img/order-ingredients/tomato.png" alt="tomatoes">
+              </div>
+              <div class="order__product-name">Tomato</div>
+              <div class="order__product-quantity">
+                <button class="no-active"></button>
+                <button class="minus tomato" data-id="tomato"></button>
+                <div class="order__quantity">0</div>
+                <button class="plus tomato" data-id="tomato"></button>
+              </div>
+            </div>
+
+            <div class="order__ingredients-product order__product">
+              <div class="order__product-img">
+                <img src="./img/order-ingredients/cucumber.png" alt="cucumber">
+              </div>
+              <div class="order__product-name">Cucumber</div>
+              <div class="order__product-quantity">
+                <button class="no-active"></button>
+                <button class="minus cucumber" data-id="cucumber"></button>
+                <div class="order__quantity">0</div>
+                <button class="plus cucumber" data-id="cucumber"></button>
+              </div>
+            </div>
+
+            <div class="order__ingredients-product order__product">
+              <div class="order__product-img">
+                <img src="./img/order-ingredients/cheese.png" alt="cheese">
+              </div>
+              <div class="order__product-name">Onion</div>
+              <div class="order__product-quantity">
+                <button class="no-active"></button>
+                <button class="minus cheese" data-id="cheese"></button>
+                <div class="order__quantity">0</div>
+                <button class="plus cheese" data-id="cheese"></button>
+              </div>
+            </div>
+
+            <div class="order__ingredients-product order__product">
+              <div class="order__product-img">
+                <img src="./img/order-ingredients/salad.png" alt="salad">
+              </div>
+              <div class="order__product-name">Salad</div>
+              <div class="order__product-quantity">
+                <button class="no-active"></button>
+                <button class="minus salad" data-id="salad"></button>
+                <div class="order__quantity">0</div>
+                <button class="plus salad" data-id="salad"></button>
+              </div>
+            </div>
+
+            <div class="order__ingredients-product order__product">
+              <div class="order__product-img">
+                <img src="./img/order-ingredients/bun-top.png" alt="bun-top">
+              </div>
+              <div class="order__product-name">Bun</div>
+              <div class="order__product-quantity">
+                <button class="no-active"></button>
+                <button class="minus bun-up" data-id="bun-up"></button>
+                <div class="order__quantity">0</div>
+                <button class="plus bun-up" data-id="bun-up"></button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <!--header__nav-logo-->
+      <div class="header__nav-logo">
+        <div class="header__logo">
+          <img src="./img/logo.png" alt="logo" />
+        </div>
+        <nav class="header__nav">
+          <ul>
+            <li class="active" data-menuanchor="firstPage"><a href="#firstPage">Discover</a></li>
+            <li data-menuanchor="lastPage"><a href="#lastPage">Make Your Burger</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!--header__info	-->
+      <div class="header__info">
+        <div class="header__call-btn">
+          <a href="#">Call Me Back </a>
+        </div>
+        <div class="header__number">
+          <a href="tel:88004378722">8 800 437-87-22</a>
+        </div>
+        <div class="header__account">
+          <img src="./img/header-smile.png" alt="account" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="header-media">
+    <div class="container">
+      <div class="menu-fixed">
+        <div class="logo">
+          <img src="./img/logo.png" alt="logo">
+        </div>
+        <div class="btn-media-nav">
+          <img src="./img/menu.png" alt="menu" class="open">
+          <img src="./img/menu-media-close.png" alt="menu-media-close" class="close">
+        </div>
+      </div>
+
+      <div class="menu-block">
+        <div class="menu-block__info">
+          <div class="btn-call">Call Me Back</div>
+          <div class="number">
+            <a href="tel:88004378722">8 800 437-87-22</a>
+          </div>
+        </div>
+        <nav class="menu-block__nav">
+          <ul>
+            <li><a href="#firstPage">Discover</a></li>
+            <li><a href="#secondPage">Make Your Burger</a></li>
+          </ul>
+        </nav>
+        <div class="menu-block__account">
+          <div class="logo">
+            <img src="./img/header-smile.png" alt="header-smile">
+          </div>
+          <div class="name">Aspen Aminoff</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="orderPopUp">
+    <div class="wrapper">
+      <div class="orderPopUp__text">The order has been accepted and is already being prepared. Thank you.</div>
+      <form class="form">
+        <input type="text" name="email" placeholder="Enter Email">
+        <button type="submit">Ok</button>
+      </form>
+      <img src="./img/close.svg" alt="close" class="close">
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

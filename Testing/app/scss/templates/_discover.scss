@@ -1,0 +1,130 @@
+.discover {
+  .container {
+    width: 1550px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+  }
+
+  // description
+  &__description {
+    margin-top: 200px;
+  }
+
+  &__title {
+    font-size: 72px;
+    line-height: 80px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    width: 500px;
+  }
+
+  // demo
+  &__demo {
+    position: relative;
+    width: 720px;
+    height: 640px;
+  }
+
+  .container-parallax {
+    position: absolute;
+  }
+
+  .sauce {
+    position: absolute;
+    top: 337px;
+    left: -20px;
+    transform: rotate(-14deg);
+    z-index: 5;
+    transition: all 0.1s ease;
+  }
+
+  .salad {
+    position: absolute;
+    top: 274px;
+    left: -57px;
+    transform: rotate(-4deg);
+    z-index: 6;
+    transition: all 0.1s ease;
+  }
+
+  .cheese {
+    position: absolute;
+    transform: rotate(14deg);
+    top: 285px;
+    left: -10px;
+    z-index: 7;
+    transition: all 0.1s ease;
+  }
+
+  .cucumber {
+    position: absolute;
+    transform: rotate(14deg);
+    top: 183px;
+    left: -30px;
+    z-index: 8;
+    transition: all 0.1s ease;
+  }
+
+  .cutlet {
+    position: absolute;
+    transform: rotate(-9deg) translateX(-40px);
+    top: 228px;
+    left: 7px;
+    z-index: 7;
+    transition: all 0.1s ease;
+  }
+
+  .bun-down {
+    position: absolute;
+    transform: rotate(-9deg);
+    top: 350px;
+    left: 20px;
+    z-index: 1;
+    transition: all 0.1s ease;
+  }
+
+  .bun-up {
+    position: absolute;
+    top: 43px;
+    left: 10px;
+    transform: rotate(-14deg);
+    z-index: 9;
+    transition: all 0.1s ease;
+  }
+
+  .bg-burger {
+    position: absolute;
+    top: -75px;
+    left: -75px;
+  }
+
+  .btn-make-burger a {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 50%;
+    background: #5243c2;
+    position: absolute;
+    top: 200px;
+    left: -110px;
+    cursor: pointer;
+  }
+}

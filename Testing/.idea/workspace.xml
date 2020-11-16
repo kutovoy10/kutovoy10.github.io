@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62e78da7-fe33-4a82-932a-7277ccd3e89d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1kADcSZRCelTPWMNLHHVjrnyXLV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\danil\AppData\Roaming\npm\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62e78da7-fe33-4a82-932a-7277ccd3e89d" name="Default Changelist" comment="" />
+      <created>1605134581901</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605134581901</updated>
+      <workItem from="1605134584580" duration="2218000" />
+      <workItem from="1605137410510" duration="924000" />
+      <workItem from="1605178525620" duration="1380000" />
+      <workItem from="1605303440851" duration="47000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2195" y="125" key="#SCSS" timestamp="1605136589763">
+      <screen x="1920" y="95" width="1366" height="738" />
+    </state>
+    <state x="2195" y="125" key="#SCSS/0.0.1920.1050/1920.95.1366.738@1920.95.1366.738" timestamp="1605136589763" />
+    <state x="2331" y="274" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605136642193">
+      <screen x="1920" y="95" width="1366" height="738" />
+    </state>
+    <state x="2331" y="274" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/1920.95.1366.738@1920.95.1366.738" timestamp="1605136642193" />
+    <state x="2383" y="222" key="FileChooserDialogImpl" timestamp="1605179906956">
+      <screen x="1920" y="95" width="1366" height="738" />
+    </state>
+    <state x="2383" y="222" key="FileChooserDialogImpl/0.0.1920.1050/1920.95.1366.738@1920.95.1366.738" timestamp="1605179906956" />
+    <state x="2106" y="109" key="SettingsEditor" timestamp="1605137387812">
+      <screen x="1920" y="95" width="1366" height="738" />
+    </state>
+    <state x="2106" y="109" key="SettingsEditor/0.0.1920.1050/1920.95.1366.738@1920.95.1366.738" timestamp="1605137387812" />
+  </component>
+</project>
