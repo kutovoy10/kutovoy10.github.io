@@ -1,0 +1,157 @@
+.footer {
+  background: $grey;
+  padding: 80px 0 20px 0;
+
+  .container {
+    @include container;
+  }
+
+  .title {
+    font-size: 18px;
+    color: $white;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+
+  // main
+  &__main {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  &__logo-social {
+    .social {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+
+      &__block {
+        display: inline-block;
+        margin-right: 34px;
+        height: 24 px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .navigation {
+    display: flex;
+
+    &__ceramica {
+      margin-right: 75px;
+    }
+
+    .nav {
+      &__item {
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &__link {
+        @include footer-link;
+      }
+    }
+  }
+
+  .info {
+    display: flex;
+
+    &__column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 120px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__link {
+      display: inline-block;
+      @include footer-link;
+      margin-bottom: 10px;
+    }
+  }
+
+  .catalog {
+    display: flex;
+    flex-direction: column;
+
+    .btn__link {
+      @include btn-with-icon;
+      margin-bottom: 20px;
+    }
+
+    .btn__img {
+      margin-left: 30px;
+    }
+  }
+
+  // copyright
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__name {
+      font-size: 14px;
+      line-height: 17px;
+      color: $white;
+    }
+
+    .language {
+      &__list {
+        display: flex;
+        align-items: center;
+      }
+
+      &__item {}
+
+      &__link {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 5%;
+        color: $white;
+        text-transform: uppercase;
+        opacity: .4;
+
+        &_active {
+          opacity: 1;
+        }
+      }
+
+      &__line {
+        height: 10px;
+        width: 1px;
+        background: $white;
+        margin: 0 8px;
+      }
+    }
+
+    &__signature {
+      display: flex;
+      align-items: center;
+      color: $white;
+      font-size: 12px;
+      line-height: 16px;
+
+      &-img {
+        margin-left: 4px;
+      }
+    }
+  }
+}

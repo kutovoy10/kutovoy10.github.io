@@ -1,0 +1,121 @@
+.blog {
+  background: #e5e5e5;
+  padding: 120px 0;
+
+  .container {
+    @include container;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    @include h2;
+
+    &::after {
+      @include h2-after;
+    }
+  }
+
+  &__link {
+    @include small-btn($blue, transparent, $blue, 60px, 60px);
+    transition: .3s ease-in-out;
+
+    &:hover {
+      border-color: $blue;
+      background: $blue;
+      color: $white;
+    }
+  }
+
+  .slider {
+    margin-left: 225px;
+
+    &__card {
+      width: 400px !important;
+      box-sizing: border-box;
+      border: 1px solid transparent;
+      padding: 10px;
+      overflow: unset;
+      position: relative;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        border-color: #cfdae3;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border: 1px solid #CFDAE3;
+        width: 378px;
+        height: calc(100% - 20px);
+        z-index: 10;
+      }
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      padding: 20px 20px 20px 20px;
+    }
+
+    &__section {
+      font-size: 14px;
+      line-height: 18px;
+      color: $dark;
+      padding: 5px 10px;
+      background: #CFDAE3;
+    }
+
+    &__data {
+      font-size: 14px;
+      line-height: 18px;
+      color: $dark;
+    }
+
+    &__title-link {
+      display: block;
+      font-size: 20px;
+      line-height: 24px;
+      color: $dark;
+      padding: 0 20px 15px 20px;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+      padding: 0 20px 15px 20px;
+    }
+
+    &__block-info {
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+    }
+
+    &__number {
+      color: $grey;
+      font-size: 12px;
+      line-height: 15px;
+      margin-left: 6px;
+    }
+  }
+}

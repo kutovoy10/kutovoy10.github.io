@@ -1,0 +1,105 @@
+@mixin small-btn($borderColor, $backgroundColor, $color, $paddingLeft, $paddingRight) {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  border: 1px solid $borderColor;
+  color: $color;
+  padding-left: $paddingLeft;
+  padding-right: $paddingRight;
+  background: $backgroundColor;
+}
+
+@mixin btn-with-icon() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  padding: 20px 23px 17px 20px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid $white;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    border-color: $blue;
+    background: $blue;
+  }
+}
+
+@mixin hover-header-function {
+  cursor: pointer;
+
+  &-img:hover svg path {
+    fill: $red;
+    transition: all .3s ease;
+  }
+}
+
+@mixin container {
+  width: 1470px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@mixin footer-link {
+  font-size: 14px;
+  line-height: 17px;
+  color: $white;
+  padding-bottom: 1px;
+  border-bottom: 1px solid transparent;
+  transition: all .3s ease;
+
+  &:hover {
+    border-color: $white;
+  }
+}
+
+@mixin h2 {
+  font-size: 20px;
+  height: 24px;
+  letter-spacing: 0.1em;
+  color: $dark;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin h2-after {
+  content: '';
+  height: 1px;
+  width: 200px;
+  background: $light-grey;
+  margin-left: 24px;
+}
+
+@mixin h2-before {
+  content: '';
+  height: 1px;
+  width: 200px;
+  background: $light-grey;
+  margin-right: 24px;
+}
+
+@mixin information-arrow {
+  position: absolute;
+  bottom: 0;
+  right: 110px;
+  cursor: pointer;
+
+  &:hover path {
+    fill: $red;
+  }
+
+  path {
+    fill: $white;
+    transition: all .3s ease-in-out;
+  }
+}

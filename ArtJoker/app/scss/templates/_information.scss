@@ -1,0 +1,133 @@
+.information {
+  background: url(../../img/info-bg.png) center/cover no-repeat;
+
+  .wrapper {
+    background: rgba(64, 71, 78, 0.45);
+    padding-bottom: 77px;
+  }
+
+  .container {
+    @include container;
+    position: relative;
+  }
+
+  .slider__title {
+    font-size: 86px;
+    line-height: 86px;
+    color: $white;
+    text-transform: uppercase;
+    padding-top: 365px;
+    margin-bottom: 28px;
+    font-weight: 400;
+  }
+
+  .slider__subtext {
+    font-size: 30px;
+    color: $white;
+    line-height: 42px;
+    padding-bottom: 94px;
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &-block {
+      position: relative;
+    }
+
+    .mouse-animate {
+      position: absolute;
+      top: 11px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: scroll-btn 1s ease infinite;
+    }
+
+    @keyframes scroll-btn {
+      from {
+        top: 11px;
+      }
+
+      to {
+        top: 30px;
+      }
+    }
+  }
+
+  &__social {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      display: block;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // slick
+
+  ul.slick-dots {
+    display: flex;
+    align-items: center;
+    height: 15px;
+    box-sizing: border-box;
+
+    li {
+      width: 5px;
+      height: 5px;
+      background: $white;
+      border-radius: 50%;
+      margin-right: 17px;
+      box-sizing: border-box;
+      border: 1px solid $white;
+      transition: all .2s ease-in-out;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.slick-active {
+        width: 15px;
+        height: 15px;
+        background: transparent;
+      }
+    }
+
+    button {
+      display: none;
+    }
+  }
+
+  .arrow-left.slick-arrow {
+    @include information-arrow;
+    right: 110px;
+  }
+
+  .arrow-right.slick-arrow {
+    @include information-arrow;
+    right: 0;
+    transform: rotate(180deg);
+  }
+
+  .arrow-line {
+    position: absolute;
+    bottom: -11px;
+    right: 69px;
+    width: 1.5px;
+    height: 34px;
+    background: $white;
+  }
+}
